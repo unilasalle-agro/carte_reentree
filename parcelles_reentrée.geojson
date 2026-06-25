@@ -1,0 +1,92 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [2.280, 49.900],
+          [2.295, 49.900],
+          [2.295, 49.890],
+          [2.280, 49.890],
+          [2.280, 49.900]
+        ]]
+      },
+      "properties": {
+        "name": "Parcelle nord",
+        "produit": "Décis Protech",
+        "date_application": "2026-06-15",
+        "nb_jours": 21,
+        "date_fin": "2026-07-06",
+        "statut": "Accès interdit",
+        "jours_restants": "11 jours restants",
+        "description": "🔴 Accès interdit jusqu'au 06/07/2026\nTraitement : Décis Protech\nApplication : 15/06/2026\nDélai : 21 jours",
+        "_umap_options": {
+          "color": "#E24B4A",
+          "fillColor": "#E24B4A",
+          "fillOpacity": 0.4,
+          "weight": 2
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [2.300, 49.895],
+          [2.318, 49.895],
+          [2.318, 49.882],
+          [2.300, 49.882],
+          [2.300, 49.895]
+        ]]
+      },
+      "properties": {
+        "name": "Parcelle est",
+        "produit": "Roundup",
+        "date_application": "2026-06-22",
+        "nb_jours": 5,
+        "date_fin": "2026-06-27",
+        "statut": "Bientôt accessible",
+        "jours_restants": "2 jours restants",
+        "description": "🟠 Bientôt accessible — le 27/06/2026\nTraitement : Roundup\nApplication : 22/06/2026\nDélai : 5 jours",
+        "_umap_options": {
+          "color": "#EF9F27",
+          "fillColor": "#EF9F27",
+          "fillOpacity": 0.4,
+          "weight": 2
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [2.260, 49.888],
+          [2.278, 49.888],
+          [2.278, 49.876],
+          [2.260, 49.876],
+          [2.260, 49.888]
+        ]]
+      },
+      "properties": {
+        "name": "Parcelle sud",
+        "produit": "Karate Zeon",
+        "date_application": "2026-06-01",
+        "nb_jours": 14,
+        "date_fin": "2026-06-15",
+        "statut": "Accessible",
+        "jours_restants": "Délai écoulé",
+        "description": "🟢 Accessible\nTraitement : Karate Zeon\nApplication : 01/06/2026\nDélai : 14 jours",
+        "_umap_options": {
+          "color": "#1D9E75",
+          "fillColor": "#1D9E75",
+          "fillOpacity": 0.4,
+          "weight": 2
+        }
+      }
+    }
+  ]
+}
