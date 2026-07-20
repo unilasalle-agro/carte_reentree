@@ -113,11 +113,10 @@
       "properties": {
         "name": "Dure peine",
         "culture": "Prairie permanente",
-        "date_application": "2026-06-01",
-        "nb_jours": 14,
-        "date_fin": "2026-06-15",
         "statut": "Accessible",
-        "jours_restants": 0
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -404,11 +403,10 @@
       "properties": {
         "name": "Entre deux bois",
         "culture": "Prairie temporaire",
-        "date_application": "2026-07-10",
-        "nb_jours": 21,
-        "date_fin": "2026-07-31",
-        "statut": "Accès interdit",
-        "jours_restants": 11
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -527,11 +525,10 @@
       "properties": {
         "name": "Ferme du bois",
         "culture": "Prairie permanente",
-        "date_application": "2026-07-15",
-        "nb_jours": 7,
-        "date_fin": "2026-07-22",
-        "statut": "Bientôt accessible",
-        "jours_restants": 2
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -862,11 +859,10 @@
       "properties": {
         "name": "Gros chêne PN",
         "culture": "Prairie permanente",
-        "date_application": "2026-06-01",
-        "nb_jours": 10,
-        "date_fin": "2026-06-11",
         "statut": "Accessible",
-        "jours_restants": 0
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -917,11 +913,10 @@
       "properties": {
         "name": "Poteau 2",
         "culture": "Maïs Ensilage",
-        "date_application": "2026-07-18",
-        "nb_jours": 21,
-        "date_fin": "2026-08-08",
         "statut": "Accès interdit",
-        "jours_restants": 19
+        "date_application": "2026-07-20",
+        "nb_jours": 5,
+        "date_fin": "2026-07-25"
       }
     },
     {
@@ -1032,11 +1027,10 @@
       "properties": {
         "name": "Cavée",
         "culture": "Maïs Ensilage",
-        "date_application": "2026-07-01",
-        "nb_jours": 14,
-        "date_fin": "2026-07-15",
         "statut": "Accessible",
-        "jours_restants": 0
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1231,11 +1225,10 @@
       "properties": {
         "name": "Grande 1",
         "culture": "Blé tendre d'hiver",
-        "date_application": "2026-07-19",
-        "nb_jours": 7,
-        "date_fin": "2026-07-26",
-        "statut": "Accès interdit",
-        "jours_restants": 6
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1362,11 +1355,10 @@
       "properties": {
         "name": "Hermitage",
         "culture": "Prairie permanente",
-        "date_application": "2026-06-01",
-        "nb_jours": 5,
-        "date_fin": "2026-06-06",
         "statut": "Accessible",
-        "jours_restants": 0
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1485,11 +1477,10 @@
       "properties": {
         "name": "Parcelle 2",
         "culture": "Bande enherbée",
-        "date_application": "2026-07-20",
-        "nb_jours": 3,
-        "date_fin": "2026-07-23",
-        "statut": "Accès interdit",
-        "jours_restants": 3
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1596,11 +1587,10 @@
       "properties": {
         "name": "Grande 2",
         "culture": "Blé tendre d'hiver",
-        "date_application": "2026-07-05",
-        "nb_jours": 21,
-        "date_fin": "2026-07-26",
-        "statut": "Accès interdit",
-        "jours_restants": 6
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1711,11 +1701,10 @@
       "properties": {
         "name": "Grande 3",
         "culture": "Betterave sucrière",
-        "date_application": "2026-07-10",
-        "nb_jours": 14,
-        "date_fin": "2026-07-24",
         "statut": "Accès interdit",
-        "jours_restants": 4
+        "date_application": "2026-07-19",
+        "nb_jours": 2,
+        "date_fin": "2026-07-21"
       }
     },
     {
@@ -1782,11 +1771,10 @@
       "properties": {
         "name": "Plaine",
         "culture": "Méteil",
-        "date_application": "2026-06-01",
-        "nb_jours": 7,
-        "date_fin": "2026-06-08",
         "statut": "Accessible",
-        "jours_restants": 0
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1885,11 +1873,10 @@
       "properties": {
         "name": "Poirier bas",
         "culture": "Orge 2 rangs de printemps",
-        "date_application": "2026-07-18",
-        "nb_jours": 48,
-        "date_fin": "2026-09-04",
-        "statut": "Accès interdit",
-        "jours_restants": 46
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1956,11 +1943,10 @@
       "properties": {
         "name": "vigne",
         "culture": "Vigne - Raisin de Cuve",
-        "date_application": "2026-07-12",
-        "nb_jours": 14,
-        "date_fin": "2026-07-26",
-        "statut": "Accès interdit",
-        "jours_restants": 6
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2023,11 +2009,10 @@
       "properties": {
         "name": "Couturelle",
         "culture": "Méteil",
-        "date_application": "2026-07-19",
-        "nb_jours": 21,
-        "date_fin": "2026-08-09",
-        "statut": "Accès interdit",
-        "jours_restants": 20
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2198,11 +2183,10 @@
       "properties": {
         "name": "Egazelles",
         "culture": "Blé tendre d'hiver",
-        "date_application": "2026-06-01",
-        "nb_jours": 7,
-        "date_fin": "2026-06-08",
         "statut": "Accessible",
-        "jours_restants": 0
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2297,11 +2281,10 @@
       "properties": {
         "name": "Gros chêne",
         "culture": "Méteil",
-        "date_application": "2026-07-16",
-        "nb_jours": 21,
-        "date_fin": "2026-08-06",
-        "statut": "Accès interdit",
-        "jours_restants": 17
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2436,11 +2419,10 @@
       "properties": {
         "name": "Larris",
         "culture": "Prairie temporaire",
-        "date_application": "2026-07-01",
-        "nb_jours": 7,
-        "date_fin": "2026-07-08",
         "statut": "Accessible",
-        "jours_restants": 0
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2487,11 +2469,10 @@
       "properties": {
         "name": "L'enclos",
         "culture": "Prairie permanente",
-        "date_application": "2026-06-15",
-        "nb_jours": 14,
-        "date_fin": "2026-06-29",
         "statut": "Accessible",
-        "jours_restants": 0
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2614,11 +2595,10 @@
       "properties": {
         "name": "Forêts",
         "culture": "Luzerne",
-        "date_application": "2026-07-18",
-        "nb_jours": 7,
-        "date_fin": "2026-07-25",
-        "statut": "Accès interdit",
-        "jours_restants": 5
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2747,11 +2727,10 @@
       "properties": {
         "name": "Marquis agrof",
         "culture": "Maïs Ensilage",
-        "date_application": "2026-07-19",
-        "nb_jours": 14,
-        "date_fin": "2026-08-02",
-        "statut": "Accès interdit",
-        "jours_restants": 13
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2858,11 +2837,10 @@
       "properties": {
         "name": "Poirier haut",
         "culture": "Blé tendre d'hiver",
-        "date_application": "2026-07-15",
-        "nb_jours": 21,
-        "date_fin": "2026-08-05",
-        "statut": "Accès interdit",
-        "jours_restants": 16
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2987,11 +2965,10 @@
       "properties": {
         "name": "Poteau 1",
         "culture": "Lin fibre",
-        "date_application": "2026-07-18",
-        "nb_jours": 21,
-        "date_fin": "2026-08-08",
-        "statut": "Accès interdit",
-        "jours_restants": 19
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     }
   ]
