@@ -857,7 +857,7 @@
         ]
       },
       "properties": {
-        "name": "Gros chÃÂÃÂÃÂÃÂªne PN",
+        "name": "Gros chêne PN",
         "culture": "Prairie permanente",
         "statut": "Accessible",
         "date_application": "-",
@@ -912,11 +912,11 @@
       },
       "properties": {
         "name": "Poteau 2",
-        "culture": "MaÃÂÃÂÃÂÃÂ¯s Ensilage",
-        "statut": "AccÃÂÃÂÃÂÃÂ¨s interdit",
-        "date_application": "2026-07-20",
-        "nb_jours": 5,
-        "date_fin": "2026-07-25"
+        "culture": "Maïs Ensilage",
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1025,8 +1025,8 @@
         ]
       },
       "properties": {
-        "name": "CavÃÂÃÂÃÂÃÂ©e",
-        "culture": "MaÃÂÃÂÃÂÃÂ¯s Ensilage",
+        "name": "Cavée",
+        "culture": "Maïs Ensilage",
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
@@ -1224,11 +1224,11 @@
       },
       "properties": {
         "name": "Grande 1",
-        "culture": "BlÃÂÃÂÃÂÃÂ© tendre d'hiver",
-        "statut": "AccÃÂ¨s interdit",
-        "date_application": "2026-07-21",
-        "nb_jours": 7,
-        "date_fin": "2026-07-28"
+        "culture": "Blé tendre d'hiver",
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1476,7 +1476,7 @@
       },
       "properties": {
         "name": "Parcelle 2",
-        "culture": "Bande enherbÃÂÃÂÃÂÃÂ©e",
+        "culture": "Bande enherbée",
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
@@ -1586,7 +1586,7 @@
       },
       "properties": {
         "name": "Grande 2",
-        "culture": "BlÃÂÃÂÃÂÃÂ© tendre d'hiver",
+        "culture": "Blé tendre d'hiver",
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
@@ -1700,11 +1700,11 @@
       },
       "properties": {
         "name": "Grande 3",
-        "culture": "Betterave sucriÃÂÃÂÃÂÃÂ¨re",
-        "statut": "Accès interdit",
-        "date_application": "2026-07-21",
-        "nb_jours": 7,
-        "date_fin": "2026-07-28"
+        "culture": "Betterave sucrière",
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1770,11 +1770,11 @@
       },
       "properties": {
         "name": "Plaine",
-        "culture": "MÃÂÃÂÃÂÃÂ©teil",
-        "statut": "AccÃÂÃÂ¨s interdit",
-        "date_application": "2026-07-21",
-        "nb_jours": 7,
-        "date_fin": "2026-07-28"
+        "culture": "Méteil",
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2008,7 +2008,7 @@
       },
       "properties": {
         "name": "Couturelle",
-        "culture": "MÃÂÃÂÃÂÃÂ©teil",
+        "culture": "Méteil",
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
@@ -2182,7 +2182,7 @@
       },
       "properties": {
         "name": "Egazelles",
-        "culture": "BlÃÂÃÂÃÂÃÂ© tendre d'hiver",
+        "culture": "Blé tendre d'hiver",
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
@@ -2279,8 +2279,8 @@
         ]
       },
       "properties": {
-        "name": "Gros chÃÂÃÂÃÂÃÂªne",
-        "culture": "MÃÂÃÂÃÂÃÂ©teil",
+        "name": "Gros chêne",
+        "culture": "Méteil",
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
@@ -2419,10 +2419,10 @@
       "properties": {
         "name": "Larris",
         "culture": "Prairie temporaire",
-        "statut": "AccÃ¨s interdit",
-        "date_application": "2026-07-21",
-        "nb_jours": 7,
-        "date_fin": "2026-07-28"
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2593,7 +2593,7 @@
         ]
       },
       "properties": {
-        "name": "ForÃÂÃÂÃÂÃÂªts",
+        "name": "Forêts",
         "culture": "Luzerne",
         "statut": "Accessible",
         "date_application": "-",
@@ -2726,7 +2726,7 @@
       },
       "properties": {
         "name": "Marquis agrof",
-        "culture": "MaÃÂÃÂÃÂÃÂ¯s Ensilage",
+        "culture": "Maïs Ensilage",
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
@@ -2836,7 +2836,7 @@
       },
       "properties": {
         "name": "Poirier haut",
-        "culture": "BlÃÂÃÂÃÂÃÂ© tendre d'hiver",
+        "culture": "Blé tendre d'hiver",
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
