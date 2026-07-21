@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#1a3a2a">
+<title>Réentrée Parcelles</title>
+<style>
+  :root {
+    --soil:   #1a3a2a;
+    --leaf:   #1D6B3A;
+    --leaf-lt:#2A8F4F;
+    --straw:  #E8D5A3;
+    --fog:    #F2F0EB;
+    --ink:    #1A1A18;
+    --muted:  #7A7A6E;
+    --danger: #C0392B;
+    --success:#1D6B3A;
+    --radius: 12px;
+    --safe:   env(safe-area-inset-bottom, 0px);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--fog); color: var(--ink); min-height: 100dvh; display: flex; flex-direction: column; }
+
+  header { background: var(--soil); color: var(--straw); padding: 20px 20px 14px; padding-top: calc(20px + env(safe-area-inset-top, 0px)); display: flex; align-items: center; gap: 12px; }
+  .header-icon { width: 34px; height: 34px; background: var(--leaf); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
+  header h1 { font-size: 16px; font-weight: 600; }
+  header p  { font-size: 11px; color: #9aaa90; margin-top: 2px; }
+
+  .screen { display: none; flex: 1; flex-direction: column; }
+  .screen.active { display: flex; }
+
+  .body { flex: 1; padding: 20px; display: flex; flex-direction: column; gap: 16px; overflow-y: auto; }
+
+  .section-label { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .07em; padding-top: 4px; }
+
+  .field { display: flex; flex-direction: column; gap: 5px; }
+  .field label { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+
+  select, input[type=date] {
+    width: 100%; font-size: 16px; padding: 12px 14px;
+    border-radius: var(--radius); border: 1.5px solid #D8D4CC;
+    background: #fff; color: var(--ink);
+    appearance: none; -webkit-appearance: none; outline: none;
+    transition: border-color .15s;
+  }
+  select:focus, input[type=date]:focus { border-color: var(--leaf); }
+  select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A7A6E' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
+  }
+
+  .stepper { display: flex; align-items: center; border: 1.5px solid #D8D4CC; border-radius: var(--radius); background: #fff; overflow: hidden; }
+  .stepper button { width: 52px; height: 50px; border: none; background: none; font-size: 22px; color: var(--leaf); cursor: pointer; flex-shrink: 0; }
+  .stepper button:active { background: var(--fog); }
+  .stepper-val { flex: 1; text-align: center; font-size: 20px; font-weight: 600; }
+  .stepper-unit { font-size: 12px; font-weight: 400; color: var(--muted); }
+
+  .preview { background: #fff; border-radius: var(--radius); border: 1.5px solid #E0DCD4; padding: 14px 16px; display: flex; align-items: center; gap: 12px; }
+  .preview-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; background: #ccc; }
+  .preview-lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  .preview-val { font-size: 15px; font-weight: 600; margin-top: 2px; }
+  .preview-st  { font-size: 12px; margin-top: 1px; }
+
+  .footer { padding: 16px 20px; padding-bottom: calc(16px + var(--safe)); background: var(--fog); border-top: 1px solid #E0DCD4; display: flex; flex-direction: column; gap: 10px; }
+
+  .btn { width: 100%; padding: 15px; border-radius: var(--radius); border: none; cursor: pointer; font-size: 16px; font-weight: 600; transition: opacity .15s, transform .1s; }
+  .btn:active { opacity: .85; transform: scale(.98); }
+  .btn-primary   { background: var(--leaf); color: #fff; }
+  .btn-secondary { background: #E8E4DC; color: var(--ink); }
+
+  .error-msg { background: #FDECEA; border-radius: var(--radius); padding: 12px 14px; font-size: 13px; color: var(--danger); display: none; line-height: 1.5; }
+  .error-msg.show { display: block; }
+
+  /* Écran chargement */
+  .loading { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; color: var(--muted); font-size: 14px; }
+  .spinner { width: 32px; height: 32px; border: 3px solid #E0DCD4; border-top-color: var(--leaf); border-radius: 50%; animation: spin .8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Écran confirmation */
+  .confirm-box { background: #EAF3DE; border-radius: var(--radius); padding: 20px; text-align: center; }
+  .confirm-icon { font-size: 32px; margin-bottom: 8px; }
+  .confirm-title { font-size: 15px; font-weight: 600; color: #3B6D11; }
+  .confirm-sub   { font-size: 12px; color: #639922; margin-top: 3px; }
+  .recap { background: #fff; border-radius: var(--radius); border: 1.5px solid #E0DCD4; }
+  .recap-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; border-bottom: 0.5px solid #E0DCD4; font-size: 13px; }
+  .recap-row:last-child { border-bottom: none; }
+  .recap-row span:first-child { color: var(--muted); }
+  .recap-row span:last-child  { font-weight: 500; }
+
+  .toast { position: fixed; bottom: calc(90px + var(--safe)); left: 50%; transform: translateX(-50%) translateY(20px); background: var(--soil); color: var(--straw); padding: 10px 20px; border-radius: 99px; font-size: 14px; font-weight: 500; opacity: 0; transition: opacity .3s, transform .3s; pointer-events: none; white-space: nowrap; z-index: 100; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  .ios-hint { background: #C8DDE8; border-radius: var(--radius); padding: 11px 14px; font-size: 12px; color: #2C4A5A; line-height: 1.5; text-align: center; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-icon">🌿</div>
+  <div>
+    <h1>Réentrée parcelles</h1>
+    <p id="header-sub">Chargement…</p>
+  </div>
+</header>
+
+<!-- ── CHARGEMENT ── -->
+<div class="screen active" id="screen-loading">
+  <div class="loading">
+    <div class="spinner"></div>
+    <span>Connexion à GitHub…</span>
+  </div>
+</div>
+
+<!-- ── ERREUR ── -->
+<div class="screen" id="screen-error">
+  <div class="body">
+    <div class="error-msg show" id="error-global"></div>
+  </div>
+</div>
+
+<!-- ── SAISIE ── -->
+<div class="screen" id="screen-main">
+  <div class="body">
+    <div class="section-label">Parcelle traitée</div>
+    <div class="field">
+      <label>Nom de la parcelle</label>
+      <select id="sel-parcelle" onchange="updatePreview()">
+        <option value="">— Sélectionner —</option>
+      </select>
+    </div>
+
+    <div class="section-label">Traitement</div>
+    <div class="field">
+      <label>Date d'application</label>
+      <input type="date" id="inp-date" onchange="updatePreview()">
+    </div>
+    <div class="field">
+      <label>Délai de réentrée</label>
+      <div class="stepper">
+        <button onclick="changerDelai(-1)" aria-label="Diminuer">−</button>
+        <div class="stepper-val"><span id="val-delai">7</span> <span class="stepper-unit">j</span></div>
+        <button onclick="changerDelai(1)" aria-label="Augmenter">+</button>
+      </div>
+    </div>
+
+    <div class="section-label">Résultat</div>
+    <div class="preview" id="preview">
+      <div class="preview-dot" id="prev-dot"></div>
+      <div>
+        <div class="preview-lbl">Accès libre le</div>
+        <div class="preview-val" id="prev-date">—</div>
+        <div class="preview-st"  id="prev-st">Sélectionnez une parcelle</div>
+      </div>
+    </div>
+
+    <div class="error-msg" id="main-error"></div>
+
+    <div class="ios-hint" id="ios-hint" style="display:none">
+      Sur iPhone : appuyez sur <strong>Partager</strong> → <strong>Sur l'écran d'accueil</strong> pour installer l'application.
+    </div>
+  </div>
+  <div class="footer">
+    <button class="btn btn-primary" id="btn-save" onclick="enregistrer()">Enregistrer le traitement</button>
+  </div>
+</div>
+
+<!-- ── CONFIRMATION ── -->
+<div class="screen" id="screen-confirm">
+  <div class="body">
+    <div class="confirm-box">
+      <div class="confirm-icon">✅</div>
+      <div class="confirm-title" id="confirm-title">Parcelle mise à jour</div>
+      <div class="confirm-sub">Carte mise à jour sur GitHub</div>
+    </div>
+    <div class="recap">
+      <div class="recap-row"><span>Parcelle</span><span id="r-parcelle">—</span></div>
+      <div class="recap-row"><span>Application</span><span id="r-date">—</span></div>
+      <div class="recap-row"><span>Délai</span><span id="r-delai">—</span></div>
+      <div class="recap-row"><span>Accès libre le</span><span id="r-fin" style="color:var(--danger)">—</span></div>
+      <div class="recap-row"><span>Statut</span><span id="r-statut">—</span></div>
+    </div>
+  </div>
+  <div class="footer">
+    <button class="btn btn-primary" onclick="nouveauTraitement()">Nouveau traitement</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ── CONFIGURATION — modifiez ces 4 lignes ──────────────────
+const GITHUB_USERNAME = 'unilasalle-agro'
+const GITHUB_REPO     = 'carte_reentree'
+const GITHUB_FICHIER  = 'parcelles_prod.geojson'
+const GITHUB_TOKEN    = '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'
+// ───────────────────────────────────────────────────────────
+
+let geojsonData = null
+let delai = 7
+
+const HEADERS = {
+  'Authorization': `token ${GITHUB_TOKEN}`,
+  'Accept': 'application/vnd.github.v3+json',
+  'User-Agent': 'PWA-Parcelles'
+}
+
+// ── Démarrage ──────────────────────────────────────────────
+window.addEventListener('load', async () => {
+  document.getElementById('inp-date').value = today()
+  await chargerGeoJSON()
+  // Hint iOS
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream
+  if (isIOS && !window.navigator.standalone) {
+    document.getElementById('ios-hint').style.display = 'block'
+  }
+})
+
+// ── Charger GeoJSON ────────────────────────────────────────
+async function chargerGeoJSON() {
+  try {
+    const url = apiUrl()
+    const res = await fetch(url, { headers: HEADERS })
+    if (!res.ok) throw new Error(`Erreur GitHub ${res.status}`)
+    const data = await res.json()
+    geojsonData = JSON.parse(atob(data.content.replace(/\n/g, '')))
+
+    const sel = document.getElementById('sel-parcelle')
+    geojsonData.features.forEach(f => {
+      const opt = document.createElement('option')
+      opt.value = f.properties.name
+      opt.textContent = `${f.properties.name} — ${f.properties.culture || ''}`
+      sel.appendChild(opt)
+    })
+
+    document.getElementById('header-sub').textContent = `${geojsonData.features.length} parcelles`
+    showScreen('main')
+  } catch(e) {
+    document.getElementById('error-global').textContent = `Impossible de charger les parcelles : ${e.message}. Vérifiez votre connexion.`
+    showScreen('error')
+  }
+}
+
+// ── Prévisualisation ───────────────────────────────────────
+function changerDelai(delta) {
+  delai = Math.max(1, Math.min(365, delai + delta))
+  document.getElementById('val-delai').textContent = delai
+  updatePreview()
+}
+
+function updatePreview() {
+  const dateStr = document.getElementById('inp-date').value
+  if (!dateStr) return
+  const dateFin = new Date(new Date(dateStr).getTime() + delai * 86400000)
+  const now = new Date(); now.setHours(0,0,0,0)
+  const statut  = dateFin > now ? 'Accès interdit' : 'Accessible'
+  const couleur = statut === 'Accès interdit' ? '#C0392B' : '#1D6B3A'
+
+  document.getElementById('prev-dot').style.background = couleur
+  document.getElementById('prev-date').textContent = dateFin.toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' })
+  document.getElementById('prev-st').textContent  = statut
+  document.getElementById('prev-st').style.color  = couleur
+}
+
+// ── Enregistrer ────────────────────────────────────────────
+async function enregistrer() {
+  const parcelle = document.getElementById('sel-parcelle').value
+  const dateStr  = document.getElementById('inp-date').value
+  const errEl    = document.getElementById('main-error')
+
+  if (!parcelle) { showError(errEl, 'Sélectionnez une parcelle.'); return }
+  if (!dateStr)  { showError(errEl, 'Saisissez une date de traitement.'); return }
+  errEl.classList.remove('show')
+
+  const btn = document.getElementById('btn-save')
+  btn.textContent = 'Envoi en cours…'; btn.disabled = true
+
+  try {
+    const dateFin = new Date(new Date(dateStr).getTime() + delai * 86400000)
+    const now = new Date(); now.setHours(0,0,0,0)
+    const statut  = dateFin > now ? 'Accès interdit' : 'Accessible'
+    const dateFinStr = dateFin.toISOString().split('T')[0]
+
+    // Mettre à jour la feature
+    geojsonData.features = geojsonData.features.map(f => {
+      if (f.properties.name === parcelle) {
+        f.properties.date_application = dateStr
+        f.properties.nb_jours         = delai
+        f.properties.date_fin         = dateFinStr
+        f.properties.statut           = statut
+      }
+      return f
+    })
+
+    // Récupérer le SHA
+    const resMeta = await fetch(apiUrl(), { headers: HEADERS })
+    const meta    = await resMeta.json()
+
+    // Pousser
+    const b64 = btoa(unescape(encodeURIComponent(JSON.stringify(geojsonData, null, 2))))
+    const resPut = await fetch(apiUrl(), {
+      method: 'PUT', headers: HEADERS,
+      body: JSON.stringify({
+        message: `Traitement ${parcelle} — ${dateStr}`,
+        content: b64,
+        sha: meta.sha
+      })
+    })
+    if (!resPut.ok) throw new Error(`GitHub ${resPut.status}`)
+
+    // Afficher confirmation
+    document.getElementById('confirm-title').textContent = `${parcelle} mis à jour`
+    document.getElementById('r-parcelle').textContent = parcelle
+    document.getElementById('r-date').textContent  = new Date(dateStr).toLocaleDateString('fr-FR')
+    document.getElementById('r-delai').textContent  = `${delai} jours`
+    document.getElementById('r-fin').textContent    = dateFin.toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' })
+    document.getElementById('r-fin').style.color    = statut === 'Accès interdit' ? '#C0392B' : '#1D6B3A'
+    document.getElementById('r-statut').textContent = statut
+    document.getElementById('r-statut').style.color = statut === 'Accès interdit' ? '#C0392B' : '#1D6B3A'
+    showScreen('confirm')
+
+  } catch(e) {
+    showError(errEl, `Erreur lors de l'envoi : ${e.message}`)
+  } finally {
+    btn.textContent = 'Enregistrer le traitement'; btn.disabled = false
+  }
+}
+
+// ── Nouveau traitement ─────────────────────────────────────
+function nouveauTraitement() {
+  document.getElementById('sel-parcelle').value = ''
+  document.getElementById('inp-date').value     = today()
+  delai = 7
+  document.getElementById('val-delai').textContent = 7
+  document.getElementById('prev-dot').style.background = '#ccc'
+  document.getElementById('prev-date').textContent = '—'
+  document.getElementById('prev-st').textContent   = 'Sélectionnez une parcelle'
+  document.getElementById('prev-st').style.color   = ''
+  showScreen('main')
+}
+
+// ── Utilitaires ────────────────────────────────────────────
+function apiUrl() {
+  return `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPO}/contents/${GITHUB_FICHIER}`
+}
+function today() {
+  return new Date().toISOString().split('T')[0]
+}
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'))
+  document.getElementById('screen-' + name).classList.add('active')
+}
+function showError(el, msg) {
+  el.textContent = msg; el.classList.add('show')
+}
+</script>
+</body>
+</html>
