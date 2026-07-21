@@ -389,7 +389,7 @@ async function enregistrer() {
         f.properties.nb_jours         = delai;
         f.properties.date_fin         = dateFin.toISOString().split('T')[0];
         f.properties.statut           = statut;
-        f.properties.jours_restants   = statut === 'Accès interdit' ? Math.ceil((dateFin - now) / 86400000) : 0;
+        f.properties.jours_restants   = statut === 'Accès interdit' ? Math.ceil((dateFin - today) / 86400000) : 0;
       }
       return f;
     });
