@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#1a3a2a">
+<title>Réentrée Parcelles</title>
+<style>
+  :root {
+    --soil:    #2C1A0E;
+    --leaf:    #1D6B3A;
+    --leaf-lt: #2A8F4F;
+    --straw:   #E8D5A3;
+    --sky:     #C8DDE8;
+    --fog:     #F2F0EB;
+    --ink:     #1A1A18;
+    --muted:   #7A7A6E;
+    --danger:  #C0392B;
+    --danger-lt:#FDECEA;
+    --radius:  12px;
+    --safe: env(safe-area-inset-bottom, 0px);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--fog);
+    color: var(--ink);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--soil);
+    color: var(--straw);
+    padding: 20px 20px 16px;
+    padding-top: calc(20px + env(safe-area-inset-top, 0px));
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .header-icon {
+    width: 36px; height: 36px;
+    background: var(--leaf);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  header h1 { font-size: 17px; font-weight: 600; line-height: 1.2; }
+  header p  { font-size: 12px; color: #A89880; margin-top: 2px; }
+
+  /* ── Screens ── */
+  .screen { display: none; flex: 1; flex-direction: column; }
+  .screen.active { display: flex; }
+
+  /* ── Setup screen ── */
+  .setup-body {
+    flex: 1; padding: 32px 20px;
+    display: flex; flex-direction: column; gap: 20px;
+    justify-content: center;
+  }
+  .setup-intro { font-size: 14px; color: var(--muted); line-height: 1.6; }
+  .setup-intro strong { color: var(--ink); }
+
+  /* ── Form elements ── */
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field label { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+
+  input[type=text], input[type=password], input[type=date], select {
+    width: 100%;
+    font-size: 16px; /* évite le zoom iOS */
+    padding: 13px 14px;
+    border-radius: var(--radius);
+    border: 1.5px solid #D8D4CC;
+    background: #fff;
+    color: var(--ink);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    transition: border-color .15s;
+  }
+  input:focus, select:focus { border-color: var(--leaf); }
+
+  select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A7A6E' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+  }
+
+  /* ── Stepper ── */
+  .stepper { display: flex; align-items: center; gap: 0; border: 1.5px solid #D8D4CC; border-radius: var(--radius); background: #fff; overflow: hidden; }
+  .stepper button {
+    width: 52px; height: 52px;
+    border: none; background: none;
+    font-size: 22px; color: var(--leaf);
+    cursor: pointer; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .stepper button:active { background: var(--fog); }
+  .stepper-val {
+    flex: 1; text-align: center;
+    font-size: 20px; font-weight: 600;
+    color: var(--ink);
+  }
+  .stepper-unit { font-size: 12px; font-weight: 400; color: var(--muted); }
+
+  /* ── Buttons ── */
+  .btn {
+    width: 100%; padding: 15px;
+    border-radius: var(--radius);
+    border: none; cursor: pointer;
+    font-size: 16px; font-weight: 600;
+    transition: opacity .15s, transform .1s;
+  }
+  .btn:active { opacity: .85; transform: scale(.98); }
+  .btn-primary { background: var(--leaf); color: #fff; }
+  .btn-secondary { background: #E8E4DC; color: var(--ink); }
+  .btn-danger { background: var(--danger); color: #fff; }
+
+  /* ── Main screen ── */
+  .main-body { flex: 1; padding: 20px; display: flex; flex-direction: column; gap: 16px; overflow-y: auto; }
+
+  /* ── Preview card ── */
+  .preview-card {
+    background: #fff;
+    border-radius: var(--radius);
+    border: 1.5px solid #E0DCD4;
+    padding: 14px 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .preview-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+  .preview-info { flex: 1; }
+  .preview-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  .preview-value { font-size: 15px; font-weight: 600; margin-top: 2px; }
+  .preview-sub { font-size: 12px; color: var(--muted); margin-top: 1px; }
+
+  /* ── Footer actions ── */
+  .footer-actions {
+    padding: 16px 20px;
+    padding-bottom: calc(16px + var(--safe));
+    background: var(--fog);
+    border-top: 1px solid #E0DCD4;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+
+  /* ── Toast ── */
+  .toast {
+    position: fixed; bottom: calc(100px + var(--safe)); left: 50%; transform: translateX(-50%) translateY(20px);
+    background: var(--soil); color: var(--straw);
+    padding: 10px 20px; border-radius: 99px;
+    font-size: 14px; font-weight: 500;
+    opacity: 0; transition: opacity .3s, transform .3s;
+    pointer-events: none; white-space: nowrap; z-index: 100;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* ── Error ── */
+  .error-msg { background: var(--danger-lt); border-radius: var(--radius); padding: 12px 14px; font-size: 13px; color: var(--danger); display: none; }
+  .error-msg.show { display: block; }
+
+  /* ── Divider ── */
+  .section-label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; padding: 4px 0 0; }
+
+  /* ── Install hint (iOS) ── */
+  .install-hint {
+    background: var(--sky);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    font-size: 13px; color: #2C4A5A;
+    line-height: 1.5; display: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-icon">🌿</div>
+  <div>
+    <h1>Réentrée Parcelles</h1>
+    <p id="header-sub">Chargement…</p>
+  </div>
+</header>
+
+<!-- ── ÉCRAN CONFIGURATION ── -->
+<div class="screen active" id="screen-setup">
+  <div class="setup-body">
+    <div class="field">
+      <label>Token GitHub</label>
+      <input type="password" id="inp-token" placeholder="ghp_xxxxxxxxxxxx" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="field">
+      <label>Username GitHub</label>
+      <input type="text" id="inp-username" placeholder="unilasalle-agro" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="field">
+      <label>Nom du dépôt</label>
+      <input type="text" id="inp-repo" placeholder="carte_reentree" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="field">
+      <label>Nom du fichier GeoJSON</label>
+      <input type="text" id="inp-fichier" placeholder="parcelles_final_v2.geojson" autocomplete="off">
+    </div>
+    <div class="error-msg" id="setup-error"></div>
+    <button class="btn btn-primary" onclick="validerConfig()">Connexion</button>
+    <div class="install-hint" id="install-hint">
+      💡 Sur iPhone : appuyez sur <strong>Partager</strong> puis <strong>Sur l'écran d'accueil</strong> pour installer l'application.
+    </div>
+  </div>
+</div>
+
+<!-- ── ÉCRAN PRINCIPAL ── -->
+<div class="screen" id="screen-main">
+  <div class="main-body">
+
+    <div class="section-label">Parcelle traitée</div>
+    <div class="field">
+      <label>Nom de la parcelle</label>
+      <select id="sel-parcelle" onchange="updatePreview()">
+        <option value="">— Sélectionner —</option>
+      </select>
+    </div>
+
+    <div class="section-label">Traitement</div>
+    <div class="field">
+      <label>Date d'application</label>
+      <input type="date" id="inp-date" onchange="updatePreview()">
+    </div>
+    <div class="field">
+      <label>Délai de réentrée</label>
+      <div class="stepper">
+        <button onclick="changerDelai(-1)" aria-label="Diminuer">−</button>
+        <div class="stepper-val"><span id="val-delai">7</span> <span class="stepper-unit">j</span></div>
+        <button onclick="changerDelai(1)" aria-label="Augmenter">+</button>
+      </div>
+    </div>
+
+    <div class="section-label">Résultat</div>
+    <div class="preview-card" id="preview-card">
+      <div class="preview-dot" id="preview-dot" style="background:#CCC"></div>
+      <div class="preview-info">
+        <div class="preview-label">Accès libre le</div>
+        <div class="preview-value" id="preview-date">—</div>
+        <div class="preview-sub" id="preview-statut">Sélectionnez une parcelle</div>
+      </div>
+    </div>
+
+    <div class="error-msg" id="main-error"></div>
+  </div>
+
+  <div class="footer-actions">
+    <button class="btn btn-primary" id="btn-enregistrer" onclick="enregistrer()">Enregistrer le traitement</button>
+    <button class="btn btn-secondary" onclick="deconnexion()">Changer de configuration</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ── État ──────────────────────────────────────────────
+let config = {};
+let geojsonData = null;
+let delai = 7;
+
+// ── Init ──────────────────────────────────────────────
+window.addEventListener('load', () => {
+  const saved = localStorage.getItem('parcelles_config');
+  if (saved) {
+    config = JSON.parse(saved);
+    chargerGeoJSON();
+  } else {
+    showScreen('setup');
+    // Hint iOS
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    const isStandalone = window.navigator.standalone;
+    if (isIOS && !isStandalone) {
+      document.getElementById('install-hint').style.display = 'block';
+    }
+  }
+  // Date du jour par défaut
+  document.getElementById('inp-date').value = new Date().toISOString().split('T')[0];
+});
+
+// ── Navigation ────────────────────────────────────────
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + name).classList.add('active');
+}
+
+// ── Configuration ─────────────────────────────────────
+async function validerConfig() {
+  const token    = document.getElementById('inp-token').value.trim();
+  const username = document.getElementById('inp-username').value.trim();
+  const repo     = document.getElementById('inp-repo').value.trim();
+  const fichier  = document.getElementById('inp-fichier').value.trim() || 'parcelles_final_v2.geojson';
+  const errEl    = document.getElementById('setup-error');
+
+  if (!token || !username || !repo) {
+    errEl.textContent = 'Tous les champs sont obligatoires.';
+    errEl.classList.add('show'); return;
+  }
+  errEl.classList.remove('show');
+
+  config = { token, username, repo, fichier };
+  const ok = await chargerGeoJSON();
+  if (ok) localStorage.setItem('parcelles_config', JSON.stringify(config));
+}
+
+function deconnexion() {
+  localStorage.removeItem('parcelles_config');
+  config = {}; geojsonData = null;
+  showScreen('setup');
+  document.getElementById('header-sub').textContent = 'Configuration';
+}
+
+// ── Charger GeoJSON depuis GitHub ─────────────────────
+async function chargerGeoJSON() {
+  document.getElementById('header-sub').textContent = 'Connexion…';
+  try {
+    const url = `https://api.github.com/repos/${config.username}/${config.repo}/contents/${config.fichier}`;
+    const res = await fetch(url, { headers: githubHeaders() });
+    if (!res.ok) throw new Error(`Erreur GitHub ${res.status}`);
+    const data = await res.json();
+    const contenu = atob(data.content.replace(/\n/g, ''));
+    geojsonData = JSON.parse(contenu);
+
+    // Remplir la liste des parcelles
+    const sel = document.getElementById('sel-parcelle');
+    sel.innerHTML = '<option value="">— Sélectionner —</option>';
+    geojsonData.features.forEach(f => {
+      const opt = document.createElement('option');
+      opt.value = f.properties.name;
+      opt.textContent = `${f.properties.name} — ${f.properties.culture || ''}`;
+      sel.appendChild(opt);
+    });
+
+    document.getElementById('header-sub').textContent = `${geojsonData.features.length} parcelles`;
+    showScreen('main');
+    return true;
+  } catch (e) {
+    const errEl = document.getElementById('setup-error');
+    errEl.textContent = `Impossible de se connecter : ${e.message}`;
+    errEl.classList.add('show');
+    document.getElementById('header-sub').textContent = 'Erreur de connexion';
+    showScreen('setup');
+    return false;
+  }
+}
+
+// ── Prévisualisation ──────────────────────────────────
+function changerDelai(delta) {
+  delai = Math.max(1, Math.min(180, delai + delta));
+  document.getElementById('val-delai').textContent = delai;
+  updatePreview();
+}
+
+function updatePreview() {
+  const dateStr = document.getElementById('inp-date').value;
+  if (!dateStr) return;
+  const dateApp = new Date(dateStr);
+  const dateFin = new Date(dateApp.getTime() + delai * 86400000);
+  const today   = new Date(); today.setHours(0,0,0,0);
+
+  const statut  = dateFin > today ? 'Accès interdit' : 'Accessible';
+  const couleur = statut === 'Accès interdit' ? '#C0392B' : '#1D6B3A';
+
+  document.getElementById('preview-dot').style.background = couleur;
+  document.getElementById('preview-date').textContent = dateFin.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+  document.getElementById('preview-statut').textContent = statut;
+  document.getElementById('preview-statut').style.color = couleur;
+}
+
+// ── Enregistrer ───────────────────────────────────────
+async function enregistrer() {
+  const parcelle = document.getElementById('sel-parcelle').value;
+  const dateStr  = document.getElementById('inp-date').value;
+  const errEl    = document.getElementById('main-error');
+
+  if (!parcelle) { errEl.textContent = 'Sélectionnez une parcelle.'; errEl.classList.add('show'); return; }
+  if (!dateStr)  { errEl.textContent = 'Saisissez une date de traitement.'; errEl.classList.add('show'); return; }
+  errEl.classList.remove('show');
+
+  const btn = document.getElementById('btn-enregistrer');
+  btn.textContent = 'Envoi en cours…'; btn.disabled = true;
+
+  try {
+    // Mettre à jour la feature correspondante
+    const dateApp = new Date(dateStr);
+    const dateFin = new Date(dateApp.getTime() + delai * 86400000);
+    const today   = new Date(); today.setHours(0,0,0,0);
+    const statut  = dateFin > today ? 'Accès interdit' : 'Accessible';
+
+    geojsonData.features = geojsonData.features.map(f => {
+      if (f.properties.name === parcelle) {
+        f.properties.date_application = dateStr;
+        f.properties.nb_jours         = delai;
+        f.properties.date_fin         = dateFin.toISOString().split('T')[0];
+        f.properties.statut           = statut;
+      }
+      return f;
+    });
+
+    // Récupérer SHA actuel
+    const urlApi = `https://api.github.com/repos/${config.username}/${config.repo}/contents/${config.fichier}`;
+    const resMeta = await fetch(urlApi, { headers: githubHeaders() });
+    const meta    = await resMeta.json();
+
+    // Pousser le fichier mis à jour
+    const contenu = JSON.stringify(geojsonData, null, 2);
+    const b64     = btoa(unescape(encodeURIComponent(contenu)));
+    const resPut  = await fetch(urlApi, {
+      method: 'PUT',
+      headers: githubHeaders(),
+      body: JSON.stringify({
+        message: `Traitement ${parcelle} — ${dateStr}`,
+        content: b64,
+        sha: meta.sha
+      })
+    });
+
+    if (!resPut.ok) throw new Error(`GitHub ${resPut.status}`);
+
+    showToast(`✅ ${parcelle} mis à jour`);
+    // Réinitialiser
+    document.getElementById('sel-parcelle').value = '';
+    document.getElementById('inp-date').value = new Date().toISOString().split('T')[0];
+    delai = 7; document.getElementById('val-delai').textContent = 7;
+    document.getElementById('preview-dot').style.background = '#CCC';
+    document.getElementById('preview-date').textContent = '—';
+    document.getElementById('preview-statut').textContent = 'Sélectionnez une parcelle';
+    document.getElementById('preview-statut').style.color = '';
+
+  } catch(e) {
+    errEl.textContent = `Erreur : ${e.message}`;
+    errEl.classList.add('show');
+  } finally {
+    btn.textContent = 'Enregistrer le traitement'; btn.disabled = false;
+  }
+}
+
+// ── Utilitaires ───────────────────────────────────────
+function githubHeaders() {
+  return {
+    'Authorization': `token ${config.token}`,
+    'Accept': 'application/vnd.github.v3+json',
+    'User-Agent': 'PWA-Parcelles'
+  };
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+</script>
+</body>
+</html>
