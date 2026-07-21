@@ -25,5 +25,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
           GITHUB_REPO: ${{ github.event.repository.name }}
-          GITHUB_FICHIER: parcelles_final_v2.geojson
+          GITHUB_FICHIER: parcelles_prod.geojson
         run: python scripts/recalcul.py
