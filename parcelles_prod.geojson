@@ -109,10 +109,11 @@
       "properties": {
         "name": "Cavée",
         "culture": "Maïs Ensilage",
-        "statut": "Accès interdit",
-        "date_application": "2026-07-22",
-        "nb_jours": 7,
-        "date_fin": "2026-07-29"
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -178,7 +179,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -296,7 +298,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -467,10 +470,11 @@
       "properties": {
         "name": "Egazelles",
         "culture": "Blé tendre d'hiver",
-        "statut": "Accès interdit",
-        "date_application": "2026-07-21",
-        "nb_jours": 7,
-        "date_fin": "2026-07-28"
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -760,7 +764,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -882,7 +887,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -1008,7 +1014,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -1203,10 +1210,11 @@
       "properties": {
         "name": "Grande 1",
         "culture": "Blé tendre d'hiver",
-        "statut": "Accès interdit",
-        "date_application": "2026-07-21",
-        "nb_jours": 3,
-        "date_fin": "2026-07-24"
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -1316,7 +1324,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -1430,7 +1439,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -1528,7 +1538,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -1862,7 +1873,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -1992,7 +2004,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -2042,7 +2055,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -2177,10 +2191,11 @@
       "properties": {
         "name": "Larris",
         "culture": "Prairie temporaire",
-        "statut": "Accès interdit",
-        "date_application": "2026-07-21",
-        "nb_jours": 4,
-        "date_fin": "2026-07-25"
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -2309,10 +2324,11 @@
       "properties": {
         "name": "Marquis agrof",
         "culture": "Maïs Ensilage",
-        "statut": "Accès interdit",
-        "date_application": "2026-07-21",
-        "nb_jours": 1,
-        "date_fin": "2026-07-22"
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -2434,7 +2450,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -2504,7 +2521,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -2606,7 +2624,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -2716,7 +2735,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -2844,7 +2864,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -2895,10 +2916,11 @@
       "properties": {
         "name": "Poteau 2",
         "culture": "Maïs Ensilage",
-        "statut": "Accès interdit",
-        "date_application": "2026-07-21",
-        "nb_jours": 7,
-        "date_fin": "2026-07-28"
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "date_fin": "-",
+        "jours_restants": 0
       }
     },
     {
@@ -2968,7 +2990,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-"
+        "date_fin": "-",
+        "jours_restants": 0
       }
     }
   ]
