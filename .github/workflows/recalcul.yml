@@ -1,0 +1,29 @@
+name: Recalcul statuts réentrée
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # Chaque nuit à 5h UTC (6h heure française)
+  workflow_dispatch:       # Permet aussi de lancer manuellement
+
+jobs:
+  recalcul:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Installer les dépendances
+        run: pip install requests
+
+      - name: Recalculer les statuts
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          GITHUB_REPO: ${{ github.event.repository.name }}
+          GITHUB_FICHIER: parcelles_final_v2.geojson
+        run: python scripts/recalcul.py
