@@ -176,11 +176,11 @@
       "properties": {
         "name": "Couturelle",
         "culture": "Méteil",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "statut": "Accès interdit",
+        "date_application": "2026-07-21",
+        "nb_jours": 7,
+        "date_fin": "2026-07-28",
+        "jours_restants": 8
       }
     },
     {
