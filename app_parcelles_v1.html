@@ -192,19 +192,7 @@
   <div class="setup-body">
     <div class="field">
       <label>Token GitHub</label>
-      <input type="password" id="inp-token" placeholder="ghp_xxxxxxxxxxxx" autocomplete="off" spellcheck="false">
-    </div>
-    <div class="field">
-      <label>Username GitHub</label>
-      <input type="text" id="inp-username" placeholder="unilasalle-agro" autocomplete="off" spellcheck="false">
-    </div>
-    <div class="field">
-      <label>Nom du dépôt</label>
-      <input type="text" id="inp-repo" placeholder="carte_reentree" autocomplete="off" spellcheck="false">
-    </div>
-    <div class="field">
-      <label>Nom du fichier GeoJSON</label>
-      <input type="text" id="inp-fichier" placeholder="parcelles_final_v2.geojson" autocomplete="off">
+      <input type="password" id="inp-token" placeholder="github_pat_xxxxxxxxxxxx" autocomplete="off" spellcheck="false">
     </div>
     <div class="error-msg" id="setup-error"></div>
     <button class="btn btn-primary" onclick="validerConfig()">Connexion</button>
@@ -295,13 +283,13 @@ function showScreen(name) {
 // ── Configuration ─────────────────────────────────────
 async function validerConfig() {
   const token    = document.getElementById('inp-token').value.trim();
-  const username = document.getElementById('inp-username').value.trim();
-  const repo     = document.getElementById('inp-repo').value.trim();
-  const fichier  = document.getElementById('inp-fichier').value.trim() || 'parcelles_final_v2.geojson';
+  const username = 'unilasalle-agro';
+  const repo     = 'carte_reentree';
+  const fichier  = 'parcelles_prod.geojson';
   const errEl    = document.getElementById('setup-error');
 
-  if (!token || !username || !repo) {
-    errEl.textContent = 'Tous les champs sont obligatoires.';
+  if (!token) {
+    errEl.textContent = 'Saisissez votre token GitHub.';
     errEl.classList.add('show'); return;
   }
   errEl.classList.remove('show');
