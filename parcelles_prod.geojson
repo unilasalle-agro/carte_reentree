@@ -2861,11 +2861,11 @@
       "properties": {
         "name": "Poteau 1",
         "culture": "Lin fibre",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "statut": "Accès interdit",
+        "date_application": "2026-07-22",
+        "nb_jours": 3,
+        "date_fin": "2026-07-25",
+        "jours_restants": 4
       }
     },
     {
