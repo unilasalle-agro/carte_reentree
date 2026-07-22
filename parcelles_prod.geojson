@@ -109,11 +109,11 @@
       "properties": {
         "name": "Cavée",
         "culture": "Maïs Ensilage",
-        "statut": "Accessible",
-        "date_application": "-",
-        "jours_restants": 0,
-        "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "statut": "Accès interdit",
+        "date_application": "2026-07-22",
+        "jours_restants": 6,
+        "date_acces": "2026-07-27",
+        "nb_jours_interdiction": 5
       }
     },
     {
