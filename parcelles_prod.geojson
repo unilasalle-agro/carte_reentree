@@ -112,8 +112,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -176,11 +176,11 @@
       "properties": {
         "name": "Couturelle",
         "culture": "Méteil",
-        "statut": "Accès interdit",
-        "date_application": "2026-07-21",
-        "nb_jours": 7,
-        "date_fin": "2026-07-28",
-        "jours_restants": 8
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -298,8 +298,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -470,11 +470,11 @@
       "properties": {
         "name": "Egazelles",
         "culture": "Blé tendre d'hiver",
-        "statut": "Accès interdit",
-        "date_application": "2026-07-21",
-        "nb_jours": 1,
-        "date_fin": "2026-07-22",
-        "jours_restants": 2
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -764,8 +764,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -887,8 +887,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -1014,8 +1014,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -1213,8 +1213,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -1324,8 +1324,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -1439,8 +1439,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -1538,8 +1538,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -1873,8 +1873,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -2004,8 +2004,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -2055,8 +2055,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -2194,8 +2194,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -2327,8 +2327,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -2450,8 +2450,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -2521,8 +2521,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -2624,8 +2624,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -2735,8 +2735,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -2861,11 +2861,11 @@
       "properties": {
         "name": "Poteau 1",
         "culture": "Lin fibre",
-        "statut": "Accès interdit",
-        "date_application": "2026-07-22",
-        "nb_jours": 3,
-        "date_fin": "2026-07-25",
-        "jours_restants": 4
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours": "-",
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -2919,8 +2919,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     },
     {
@@ -2990,8 +2990,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours": "-",
-        "date_fin": "-",
-        "jours_restants": 0
+        "jours_restants": 0,
+        "date_acces": "-"
       }
     }
   ]

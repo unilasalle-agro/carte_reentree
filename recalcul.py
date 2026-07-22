@@ -24,17 +24,17 @@ HEADERS = {
 }
 
 def calculer(date_app_str, nb_jours):
-    """Retourne (statut, date_fin, jours_restants)"""
+    """Retourne (statut, date_acces, jours_restants)"""
     if not date_app_str or date_app_str == '-' or not nb_jours or nb_jours == '-':
         return 'Accessible', '-', 0
     try:
         date_app = date.fromisoformat(str(date_app_str)[:10])
-        date_fin = date_app + timedelta(days=int(nb_jours))
-        jours_restants = (date_fin - date.today()).days
-        if date.today() > date_fin:
-            return 'Accessible', date_fin.isoformat(), 0
+        date_acces = date_app + timedelta(days=int(nb_jours))
+        jours_restants = (date_acces - date.today()).days
+        if date.today() > date_acces:
+            return 'Accessible', date_acces.isoformat(), 0
         else:
-            return 'Accès interdit', date_fin.isoformat(), jours_restants
+            return 'Accès interdit', date_acces.isoformat(), jours_restants
     except Exception:
         return 'Accessible', '-', 0
 
@@ -57,10 +57,10 @@ def main():
     for feat in geojson['features']:
         p = feat['properties']
         ancien_statut = p.get('statut', 'Accessible')
-        statut, date_fin, jours_restants = calculer(p.get('date_application'), p.get('nb_jours'))
+        statut, date_acces, jours_restants = calculer(p.get('date_application'), p.get('nb_jours'))
 
         p['statut']          = statut
-        p['date_fin']        = date_fin
+        p['date_acces']        = date_acces
         p['jours_restants']  = jours_restants
 
         emoji = '🔴' if statut == 'Accès interdit' else '🟢'

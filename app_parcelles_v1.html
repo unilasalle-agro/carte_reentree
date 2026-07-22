@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#1a3a2a">
-<title>Réentrée Parcelles</title>
+<title>Délais de réentrée - UniLaSalle</title>
 <style>
   :root {
     --soil:    #2C1A0E;
@@ -220,7 +220,7 @@
       <input type="date" id="inp-date" onchange="updatePreview()">
     </div>
     <div class="field">
-      <label>Délai de réentrée (à compter de demain)</label>
+      <label>Délai de réentrée (à partir d'aujourd'hui)</label>
       <div class="stepper">
         <button onclick="changerDelai(-1)" aria-label="Diminuer">−</button>
         <div class="stepper-val"><span id="val-delai">7</span> <span class="stepper-unit">j</span></div>
@@ -387,7 +387,7 @@ async function enregistrer() {
       if (f.properties.name === parcelle) {
         f.properties.date_application = dateStr;
         f.properties.nb_jours         = delai;
-        f.properties.date_fin         = dateFin.toISOString().split('T')[0];
+        f.properties.date_acces         = dateFin.toISOString().split('T')[0];
         f.properties.statut           = statut;
         f.properties.jours_restants   = statut === 'Accès interdit' ? Math.ceil((dateFin - today) / 86400000) : 0;
       }
