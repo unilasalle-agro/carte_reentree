@@ -386,7 +386,7 @@ async function enregistrer() {
     geojsonData.features = geojsonData.features.map(f => {
       if (f.properties.name === parcelle) {
         f.properties.date_application = dateStr;
-        f.properties.nb_jours         = delai;
+        f.properties.nb_jours_interdiction         = delai;
         f.properties.date_acces         = dateFin.toISOString().split('T')[0];
         f.properties.statut           = statut;
         f.properties.jours_restants   = statut === 'Accès interdit' ? Math.ceil((dateFin - today) / 86400000) : 0;

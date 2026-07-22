@@ -23,13 +23,13 @@ HEADERS = {
     'User-Agent': 'GitHubActions-Parcelles'
 }
 
-def calculer(date_app_str, nb_jours):
+def calculer(date_app_str, nb_jours_interdiction):
     """Retourne (statut, date_acces, jours_restants)"""
-    if not date_app_str or date_app_str == '-' or not nb_jours or nb_jours == '-':
+    if not date_app_str or date_app_str == '-' or not nb_jours_interdiction or nb_jours_interdiction == '-':
         return 'Accessible', '-', 0
     try:
         date_app = date.fromisoformat(str(date_app_str)[:10])
-        date_acces = date_app + timedelta(days=int(nb_jours))
+        date_acces = date_app + timedelta(days=int(nb_jours_interdiction))
         jours_restants = (date_acces - date.today()).days
         if date.today() > date_acces:
             return 'Accessible', date_acces.isoformat(), 0
@@ -57,7 +57,7 @@ def main():
     for feat in geojson['features']:
         p = feat['properties']
         ancien_statut = p.get('statut', 'Accessible')
-        statut, date_acces, jours_restants = calculer(p.get('date_application'), p.get('nb_jours'))
+        statut, date_acces, jours_restants = calculer(p.get('date_application'), p.get('nb_jours_interdiction'))
 
         p['statut']          = statut
         p['date_acces']        = date_acces

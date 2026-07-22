@@ -109,11 +109,11 @@
       "properties": {
         "name": "Cavée",
         "culture": "Maïs Ensilage",
-        "statut": "Accès interdit",
-        "date_application": "2026-07-22",
-        "nb_jours": 4,
-        "jours_restants": 5,
-        "date_acces": "2026-07-26"
+        "statut": "Accessible",
+        "date_application": "-",
+        "jours_restants": 0,
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -178,9 +178,9 @@
         "culture": "Méteil",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -297,9 +297,9 @@
         "culture": "Prairie permanente",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -472,9 +472,9 @@
         "culture": "Blé tendre d'hiver",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -763,9 +763,9 @@
         "culture": "Prairie temporaire",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -886,9 +886,9 @@
         "culture": "Prairie permanente",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -1013,9 +1013,9 @@
         "culture": "Luzerne",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -1212,9 +1212,9 @@
         "culture": "Blé tendre d'hiver",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -1323,9 +1323,9 @@
         "culture": "Blé tendre d'hiver",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -1438,9 +1438,9 @@
         "culture": "Betterave sucrière",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -1537,9 +1537,9 @@
         "culture": "Méteil",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -1872,9 +1872,9 @@
         "culture": "Prairie permanente",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -2003,9 +2003,9 @@
         "culture": "Prairie permanente",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -2054,9 +2054,9 @@
         "culture": "Prairie permanente",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -2193,9 +2193,9 @@
         "culture": "Prairie temporaire",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -2326,9 +2326,9 @@
         "culture": "Maïs Ensilage",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -2449,9 +2449,9 @@
         "culture": "Bande enherbée",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -2520,9 +2520,9 @@
         "culture": "Méteil",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -2623,9 +2623,9 @@
         "culture": "Orge 2 rangs de printemps",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -2734,9 +2734,9 @@
         "culture": "Blé tendre d'hiver",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -2863,9 +2863,9 @@
         "culture": "Lin fibre",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -2918,9 +2918,9 @@
         "culture": "Maïs Ensilage",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     },
     {
@@ -2989,9 +2989,9 @@
         "culture": "Vigne - Raisin de Cuve",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours": "-",
         "jours_restants": 0,
-        "date_acces": "-"
+        "date_acces": "-",
+        "nb_jours_interdiction": "-"
       }
     }
   ]
