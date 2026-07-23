@@ -109,11 +109,12 @@
       "properties": {
         "name": "Cavée",
         "culture": "Maïs Ensilage",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-07-22",
         "jours_restants": 5,
         "date_acces": "2026-07-26",
-        "nb_jours_interdiction": 4
+        "nb_jours_interdiction": 4,
+        "date_fin": "-"
       }
     },
     {
@@ -180,7 +181,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -299,7 +301,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -474,7 +477,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -765,7 +769,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -888,7 +893,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1015,7 +1021,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1214,7 +1221,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1325,7 +1333,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1436,11 +1445,12 @@
       "properties": {
         "name": "Grande 3",
         "culture": "Betterave sucrière",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-07-22",
         "jours_restants": 2,
         "date_acces": "2026-07-23",
-        "nb_jours_interdiction": 1
+        "nb_jours_interdiction": 1,
+        "date_fin": "-"
       }
     },
     {
@@ -1539,7 +1549,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1874,7 +1885,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2005,7 +2017,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2056,7 +2069,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2195,7 +2209,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2328,7 +2343,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2451,7 +2467,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2522,7 +2539,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2625,7 +2643,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2736,7 +2755,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2865,7 +2885,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2920,7 +2941,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2991,7 +3013,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     }
   ]
