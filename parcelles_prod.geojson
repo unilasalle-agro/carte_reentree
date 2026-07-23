@@ -295,11 +295,11 @@
       "properties": {
         "name": "Dure peine",
         "culture": "Prairie permanente",
-        "statut": "Accessible",
-        "date_application": "-",
-        "jours_restants": 0,
-        "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "statut": "Accès interdit",
+        "date_application": "2026-07-26",
+        "jours_restants": 11,
+        "date_acces": "2026-08-02",
+        "nb_jours_interdiction": 7
       }
     },
     {
