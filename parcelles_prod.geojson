@@ -109,11 +109,12 @@
       "properties": {
         "name": "Cavée",
         "culture": "Maïs Ensilage",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-07-21",
         "jours_restants": 2,
         "date_acces": "2026-07-24",
-        "nb_jours_interdiction": 3
+        "nb_jours_interdiction": 3,
+        "date_fin": "-"
       }
     },
     {
@@ -176,11 +177,12 @@
       "properties": {
         "name": "Couturelle",
         "culture": "Méteil",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-07-25",
         "jours_restants": 10,
         "date_acces": "2026-08-01",
-        "nb_jours_interdiction": 7
+        "nb_jours_interdiction": 7,
+        "date_fin": "-"
       }
     },
     {
@@ -295,11 +297,12 @@
       "properties": {
         "name": "Dure peine",
         "culture": "Prairie permanente",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-07-26",
         "jours_restants": 11,
         "date_acces": "2026-08-02",
-        "nb_jours_interdiction": 7
+        "nb_jours_interdiction": 7,
+        "date_fin": "-"
       }
     },
     {
@@ -470,11 +473,12 @@
       "properties": {
         "name": "Egazelles",
         "culture": "Blé tendre d'hiver",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-07-23",
         "jours_restants": 8,
         "date_acces": "2026-07-30",
-        "nb_jours_interdiction": 7
+        "nb_jours_interdiction": 7,
+        "date_fin": "-"
       }
     },
     {
@@ -765,7 +769,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -888,7 +893,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1011,11 +1017,12 @@
       "properties": {
         "name": "Forêts",
         "culture": "Luzerne",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-07-23",
         "jours_restants": 8,
         "date_acces": "2026-07-30",
-        "nb_jours_interdiction": 7
+        "nb_jours_interdiction": 7,
+        "date_fin": "-"
       }
     },
     {
@@ -1214,7 +1221,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1325,7 +1333,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1440,7 +1449,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1539,7 +1549,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1874,7 +1885,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2005,7 +2017,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2056,7 +2069,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2195,7 +2209,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2328,7 +2343,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2451,7 +2467,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2522,7 +2539,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2625,7 +2643,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2736,7 +2755,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2865,7 +2885,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2920,7 +2941,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2991,7 +3013,8 @@
         "date_application": "-",
         "jours_restants": 0,
         "date_acces": "-",
-        "nb_jours_interdiction": "-"
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     }
   ]
