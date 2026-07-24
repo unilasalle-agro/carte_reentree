@@ -473,7 +473,7 @@
       "properties": {
         "name": "Egazelles",
         "culture": "Blé tendre d'hiver",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-07-23",
         "jours_restants": 4,
         "date_acces": "2026-07-26",
