@@ -354,8 +354,8 @@ function updatePreview() {
   const dateFin = new Date(dateApp.getTime() + delai * 86400000);
   const today   = new Date(); today.setHours(0,0,0,0);
 
-  const statut  = dateFin > today ? 'Accès interdit' : 'Accessible';
-  const couleur = statut === 'Accès interdit' ? '#C0392B' : '#1D6B3A';
+  const statut  = dateApp > today ? 'Planifié' : (dateFin > today ? 'Accès interdit' : 'Accessible');
+  const couleur = statut === 'Planifié' ? '#185FA5' : statut === 'Accès interdit' ? '#C0392B' : '#1D6B3A';
 
   document.getElementById('preview-dot').style.background = couleur;
   document.getElementById('preview-date').textContent = dateFin.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -381,15 +381,15 @@ async function enregistrer() {
     const dateApp = new Date(dateStr);
     const dateFin = new Date(dateApp.getTime() + delai * 86400000);
     const today   = new Date(); today.setHours(0,0,0,0);
-    const statut  = dateFin > today ? 'Accès interdit' : 'Accessible';
+    const statut  = dateApp > today ? 'Planifié' : (dateFin > today ? 'Accès interdit' : 'Accessible');
 
     geojsonData.features = geojsonData.features.map(f => {
       if (f.properties.name === parcelle) {
-        f.properties.date_application = dateStr;
-        f.properties.nb_jours_interdiction         = delai;
-        f.properties.date_acces         = dateFin.toISOString().split('T')[0];
-        f.properties.statut           = statut;
-        f.properties.jours_restants   = statut === 'Accès interdit' ? Math.ceil((dateFin - today) / 86400000) : 0;
+        f.properties.date_application      = dateStr;
+        f.properties.nb_jours_interdiction = delai;
+        f.properties.date_acces            = dateFin.toISOString().split('T')[0];
+        f.properties.statut                = statut;
+        f.properties.jours_restants        = statut === 'Accès interdit' ? Math.ceil((dateFin - today) / 86400000) : 0;
       }
       return f;
     });

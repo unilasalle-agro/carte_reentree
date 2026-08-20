@@ -33,6 +33,8 @@ def calculer(date_app_str, nb_jours_interdiction):
         jours_restants = (date_acces - date.today()).days
         if date.today() > date_acces:
             return 'Accessible', date_acces.isoformat(), 0
+        elif date.today() < date_app:
+            return 'Planifié', date_acces.isoformat(), jours_restants
         else:
             return 'Accès interdit', date_acces.isoformat(), jours_restants
     except Exception:
