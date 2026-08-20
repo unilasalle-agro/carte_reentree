@@ -228,11 +228,11 @@
       "properties": {
         "name": "Ferme - Dure peine",
         "culture": "Prairie permanente",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
+        "statut": "Accès interdit",
+        "date_application": "2026-08-20",
+        "nb_jours_interdiction": 3,
+        "date_acces": "2026-08-22",
+        "jours_restants": 3
       }
     },
     {
