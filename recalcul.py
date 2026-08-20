@@ -24,21 +24,20 @@ HEADERS = {
 }
 
 def calculer(date_app_str, nb_jours_interdiction):
-    """Retourne (statut, date_acces, jours_restants)"""
+    """Retourne (statut, date_acces)"""
     if not date_app_str or date_app_str == '-' or not nb_jours_interdiction or nb_jours_interdiction == '-':
-        return 'Accessible', '-', 0
+        return 'Accessible', '-'
     try:
         date_app = date.fromisoformat(str(date_app_str)[:10])
         date_acces = date_app + timedelta(days=int(nb_jours_interdiction))
-        jours_restants = (date_acces - date.today()).days
         if date.today() > date_acces:
-            return 'Accessible', date_acces.isoformat(), 0
+            return 'Accessible', date_acces.isoformat()
         elif date.today() < date_app:
-            return 'Planifié', date_acces.isoformat(), jours_restants
+            return 'Planifié', date_acces.isoformat()
         else:
-            return 'Accès interdit', date_acces.isoformat(), jours_restants
+            return 'Accès interdit', date_acces.isoformat()
     except Exception:
-        return 'Accessible', '-', 0
+        return 'Accessible', '-'
 
 def main():
     print(f"Recalcul des statuts — {date.today().isoformat()}")
@@ -54,21 +53,21 @@ def main():
     geojson = json.loads(contenu)
     print(f"  {len(geojson['features'])} parcelles chargées")
 
-    # 2. Recalculer les statuts et jours restants
+    # 2. Recalculer les statuts
     modifiees = 0
     for feat in geojson['features']:
         p = feat['properties']
         ancien_statut = p.get('statut', 'Accessible')
-        statut, date_acces, jours_restants = calculer(p.get('date_application'), p.get('nb_jours_interdiction'))
+        statut, date_acces = calculer(p.get('date_application'), p.get('nb_jours_interdiction'))
 
-        p['statut']          = statut
-        p['date_acces']        = date_acces
-        p['jours_restants']  = jours_restants
+        p['statut']     = statut
+        p['date_acces'] = date_acces
+        if 'jours_restants' in p:
+            del p['jours_restants']
 
-        emoji = '🔴' if statut == 'Accès interdit' else '🟢'
+        emoji = '🔴' if statut == 'Accès interdit' else ('🔵' if statut == 'Planifié' else '🟢')
         changed = ' ← CHANGEMENT' if ancien_statut != statut else ''
-        jours_txt = f" | {jours_restants}j restants" if jours_restants > 0 else ''
-        print(f"  {emoji} {p.get('name', '?'):25} | {statut}{jours_txt}{changed}")
+        print(f"  {emoji} {p.get('name', '?'):35} | {statut}{changed}")
         if ancien_statut != statut:
             modifiees += 1
 
