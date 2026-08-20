@@ -220,6 +220,12 @@
       <input type="date" id="inp-date" onchange="updatePreview()">
     </div>
     <div class="field">
+      <label style="display:flex;align-items:center;gap:10px;font-size:13px;text-transform:none;letter-spacing:0;color:var(--ink);font-weight:400;">
+        <input type="checkbox" id="chk-planifie" onchange="updatePreview()" style="width:20px;height:20px;accent-color:#185FA5;flex-shrink:0;">
+        Intervention planifiée (pas encore réalisée)
+      </label>
+    </div>
+    <div class="field">
       <label>Nb. jours d'interdiction (à partir d'aujourd'hui)</label>
       <div class="stepper">
         <button onclick="changerDelai(-1)" aria-label="Diminuer">−</button>
@@ -348,13 +354,15 @@ function changerDelai(delta) {
 }
 
 function updatePreview() {
-  const dateStr = document.getElementById('inp-date').value;
+  const dateStr   = document.getElementById('inp-date').value;
+  const planifie  = document.getElementById('chk-planifie').checked;
   if (!dateStr) return;
-  const dateApp = new Date(dateStr);
-  const dateFin = new Date(dateApp.getTime() + delai * 86400000);
+  const [y, m, d] = dateStr.split('-').map(Number);
+  const dateApp = new Date(y, m - 1, d);
+  const dateFin = new Date(y, m - 1, d + delai);
   const today   = new Date(); today.setHours(0,0,0,0);
 
-  const statut  = dateApp > today ? 'Planifié' : (dateFin > today ? 'Accès interdit' : 'Accessible');
+  const statut  = planifie ? 'Planifié' : (dateFin > today ? 'Accès interdit' : 'Accessible');
   const couleur = statut === 'Planifié' ? '#185FA5' : statut === 'Accès interdit' ? '#C0392B' : '#1D6B3A';
 
   document.getElementById('preview-dot').style.background = couleur;
@@ -378,10 +386,12 @@ async function enregistrer() {
 
   try {
     // Mettre à jour la feature correspondante
-    const dateApp = new Date(dateStr);
-    const dateFin = new Date(dateApp.getTime() + delai * 86400000);
+    const planifie  = document.getElementById('chk-planifie').checked;
+    const [y, m, d] = dateStr.split('-').map(Number);
+    const dateApp = new Date(y, m - 1, d);
+    const dateFin = new Date(y, m - 1, d + delai);
     const today   = new Date(); today.setHours(0,0,0,0);
-    const statut  = dateApp > today ? 'Planifié' : (dateFin > today ? 'Accès interdit' : 'Accessible');
+    const statut  = planifie ? 'Planifié' : (dateFin > today ? 'Accès interdit' : 'Accessible');
 
     geojsonData.features = geojsonData.features.map(f => {
       if (f.properties.name === parcelle) {
@@ -418,6 +428,7 @@ async function enregistrer() {
     // Réinitialiser
     document.getElementById('sel-parcelle').value = '';
     document.getElementById('inp-date').value = new Date().toISOString().split('T')[0];
+    document.getElementById('chk-planifie').checked = false;
     delai = 7; document.getElementById('val-delai').textContent = 7;
     document.getElementById('preview-dot').style.background = '#CCC';
     document.getElementById('preview-date').textContent = '—';
