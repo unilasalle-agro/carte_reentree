@@ -222,7 +222,7 @@
     <div class="field">
       <label style="display:flex;align-items:center;gap:10px;font-size:13px;text-transform:none;letter-spacing:0;color:var(--ink);font-weight:400;">
         <input type="checkbox" id="chk-planifie" onchange="updatePreview()" style="width:20px;height:20px;accent-color:#185FA5;flex-shrink:0;">
-        Intervention planifiée
+        Intervention planifiée (pas encore réalisée)
       </label>
     </div>
     <div class="field">
@@ -388,18 +388,19 @@ async function enregistrer() {
     // Mettre à jour la feature correspondante
     const planifie  = document.getElementById('chk-planifie').checked;
     const [y, m, d] = dateStr.split('-').map(Number);
-    const dateApp = new Date(y, m - 1, d);
     const dateFin = new Date(y, m - 1, d + delai);
     const today   = new Date(); today.setHours(0,0,0,0);
     const statut  = planifie ? 'Planifié' : (dateFin > today ? 'Accès interdit' : 'Accessible');
+
+    // Formater la date sans passer par UTC
+    const dateAccesStr = `${dateFin.getFullYear()}-${String(dateFin.getMonth()+1).padStart(2,'0')}-${String(dateFin.getDate()).padStart(2,'0')}`;
 
     geojsonData.features = geojsonData.features.map(f => {
       if (f.properties.name === parcelle) {
         f.properties.date_application      = dateStr;
         f.properties.nb_jours_interdiction = delai;
-        f.properties.date_acces            = dateFin.toISOString().split('T')[0];
+        f.properties.date_acces            = dateAccesStr;
         f.properties.statut                = statut;
-        f.properties.jours_restants        = statut === 'Accès interdit' ? Math.ceil((dateFin - today) / 86400000) : 0;
       }
       return f;
     });
