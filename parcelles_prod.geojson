@@ -109,10 +109,10 @@
       "properties": {
         "name": "Ferme - Cavée",
         "culture": "Maïs Ensilage",
-        "statut": "Accès interdit",
-        "date_application": "2026-08-20",
-        "nb_jours_interdiction": 3,
-        "date_acces": "2026-08-23"
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours_interdiction": "-",
+        "date_acces": "-"
       }
     },
     {
@@ -401,11 +401,10 @@
       "properties": {
         "name": "Ferme - Egazelles",
         "culture": "Blé tendre d'hiver",
-        "statut": "Accès interdit",
-        "date_application": "2026-08-20",
-        "nb_jours_interdiction": 3,
-        "date_acces": "2026-08-22",
-        "jours_restants": 3
+        "statut": "Accessible",
+        "date_application": "-",
+        "nb_jours_interdiction": "-",
+        "date_acces": "-"
       }
     },
     {
