@@ -222,14 +222,14 @@
     <div class="field">
       <label style="display:flex;align-items:center;gap:10px;font-size:13px;text-transform:none;letter-spacing:0;color:var(--ink);font-weight:400;">
         <input type="checkbox" id="chk-planifie" onchange="updatePreview()" style="width:20px;height:20px;accent-color:#185FA5;flex-shrink:0;">
-        Intervention planifiée (pas encore réalisée)
+        Intervention planifiée
       </label>
     </div>
     <div class="field">
       <label>Nb. jours d'interdiction (jour d'application inclus)</label>
       <div class="stepper">
         <button onclick="changerDelai(-1)" aria-label="Diminuer">−</button>
-        <div class="stepper-val"><span id="val-delai">7</span> <span class="stepper-unit">j</span></div>
+        <div class="stepper-val"><span id="val-delai">3</span> <span class="stepper-unit">j</span></div>
         <button onclick="changerDelai(1)" aria-label="Augmenter">+</button>
       </div>
     </div>
@@ -259,7 +259,7 @@
 // ── État ──────────────────────────────────────────────
 let config = {};
 let geojsonData = null;
-let delai = 7;
+let delai = 3;
 
 // ── Init ──────────────────────────────────────────────
 window.addEventListener('load', () => {
@@ -430,7 +430,7 @@ async function enregistrer() {
     document.getElementById('sel-parcelle').value = '';
     document.getElementById('inp-date').value = new Date().toISOString().split('T')[0];
     document.getElementById('chk-planifie').checked = false;
-    delai = 7; document.getElementById('val-delai').textContent = 7;
+    delai = 3; document.getElementById('val-delai').textContent = 3;
     document.getElementById('preview-dot').style.background = '#CCC';
     document.getElementById('preview-date').textContent = '—';
     document.getElementById('preview-statut').textContent = 'Sélectionnez une parcelle';
