@@ -107,13 +107,82 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Cavée",
+        "name": "Cavée",
         "culture": "Maïs Ensilage",
+        "statut": "Accès interdit",
+        "date_application": "2026-08-20",
+        "jours_restants": 5,
+        "date_acces": "2026-08-24",
+        "nb_jours_interdiction": 4,
+        "date_fin": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.075133321416514,
+              49.46804795500807
+            ],
+            [
+              2.075096624696863,
+              49.46770663475146
+            ],
+            [
+              2.074913201740868,
+              49.46739195458698
+            ],
+            [
+              2.074773474417051,
+              49.46728042620374
+            ],
+            [
+              2.073989269987129,
+              49.46669490187051
+            ],
+            [
+              2.073912882408515,
+              49.46659045934418
+            ],
+            [
+              2.073811459985846,
+              49.46664853527165
+            ],
+            [
+              2.073393851410717,
+              49.46998562970981
+            ],
+            [
+              2.073377735102252,
+              49.470281046933415
+            ],
+            [
+              2.073457749667194,
+              49.470307778908385
+            ],
+            [
+              2.074607667606732,
+              49.46884281992063
+            ],
+            [
+              2.075133321416514,
+              49.46804795500807
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Couturelle",
+        "culture": "Méteil",
         "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
+        "date_application": "2026-07-25",
+        "jours_restants": 10,
+        "date_acces": "2026-08-01",
+        "nb_jours_interdiction": 7,
+        "date_fin": "-"
       }
     },
     {
@@ -226,13 +295,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Dure peine",
+        "name": "Dure peine",
         "culture": "Prairie permanente",
         "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
+        "date_application": "2026-07-26",
+        "jours_restants": 11,
+        "date_acces": "2026-08-02",
+        "nb_jours_interdiction": 7,
+        "date_fin": "-"
       }
     },
     {
@@ -401,13 +471,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Egazelles",
+        "name": "Egazelles",
         "culture": "Blé tendre d'hiver",
         "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
+        "date_application": "2026-07-23",
+        "jours_restants": 4,
+        "date_acces": "2026-07-26",
+        "nb_jours_interdiction": 3,
+        "date_fin": "-"
       }
     },
     {
@@ -692,13 +763,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Entre deux bois",
+        "name": "Entre deux bois",
         "culture": "Prairie temporaire",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -815,13 +887,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Ferme du bois",
+        "name": "Ferme du bois",
         "culture": "Prairie permanente",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -942,13 +1015,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Forêts",
+        "name": "Forêts",
         "culture": "Luzerne",
         "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
+        "date_application": "2026-07-23",
+        "jours_restants": 8,
+        "date_acces": "2026-07-30",
+        "nb_jours_interdiction": 7,
+        "date_fin": "-"
       }
     },
     {
@@ -1141,13 +1215,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Grande 1",
+        "name": "Grande 1",
         "culture": "Blé tendre d'hiver",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1252,13 +1327,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Grande 2",
+        "name": "Grande 2",
         "culture": "Blé tendre d'hiver",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1367,13 +1443,114 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Grande 3",
+        "name": "Grande 3",
         "culture": "Betterave sucrière",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.073586510058363,
+              49.46734206341741
+            ],
+            [
+              2.073586506083276,
+              49.46734205439867
+            ],
+            [
+              2.073586491027973,
+              49.46734204799169
+            ],
+            [
+              2.072780334207827,
+              49.46732779497134
+            ],
+            [
+              2.07257878752069,
+              49.46732422902262
+            ],
+            [
+              2.071788722402168,
+              49.46704507821327
+            ],
+            [
+              2.071773845279368,
+              49.46703982019574
+            ],
+            [
+              2.07162160967419,
+              49.466933429754036
+            ],
+            [
+              2.071621593191662,
+              49.46693342603238
+            ],
+            [
+              2.071621579337325,
+              49.46693342952155
+            ],
+            [
+              2.071608668968871,
+              49.46694223445329
+            ],
+            [
+              2.071608653849077,
+              49.46694223164092
+            ],
+            [
+              2.071608308671765,
+              49.466942024061325
+            ],
+            [
+              2.071443807965525,
+              49.46704557387216
+            ],
+            [
+              2.070834790535701,
+              49.46702544641031
+            ],
+            [
+              2.070535901236375,
+              49.469945271406296
+            ],
+            [
+              2.07326031849306,
+              49.47007972281872
+            ],
+            [
+              2.073266136643725,
+              49.4700309077036
+            ],
+            [
+              2.073521265690233,
+              49.46788967289782
+            ],
+            [
+              2.073586510058363,
+              49.46734206341741
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Gros chêne",
+        "culture": "Méteil",
+        "statut": "Accessible",
+        "date_application": "-",
+        "jours_restants": 0,
+        "date_acces": "-",
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1702,13 +1879,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Gros chêne PN",
+        "name": "Gros chêne PN",
         "culture": "Prairie permanente",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1833,13 +2011,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Hermitage",
+        "name": "Hermitage",
         "culture": "Prairie permanente",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1884,13 +2063,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - L'enclos",
+        "name": "L'enclos",
         "culture": "Prairie permanente",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2023,184 +2203,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Larris",
+        "name": "Larris",
         "culture": "Prairie temporaire",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.065258495459163,
-              49.471871453060295
-            ],
-            [
-              2.065221275752877,
-              49.47150968459576
-            ],
-            [
-              2.065156173778439,
-              49.47116885845555
-            ],
-            [
-              2.061885914892349,
-              49.47045297099288
-            ],
-            [
-              2.061705566848157,
-              49.47053718923521
-            ],
-            [
-              2.06165879032438,
-              49.47070091975862
-            ],
-            [
-              2.061076579415066,
-              49.4718093915603
-            ],
-            [
-              2.06107463123554,
-              49.47211615948372
-            ],
-            [
-              2.060984328137859,
-              49.472465049443294
-            ],
-            [
-              2.060859750258596,
-              49.472692387975236
-            ],
-            [
-              2.060696030771362,
-              49.47286472453979
-            ],
-            [
-              2.059748834249007,
-              49.47397273515728
-            ],
-            [
-              2.059419310412488,
-              49.47442254168818
-            ],
-            [
-              2.059451175895482,
-              49.47442828088914
-            ],
-            [
-              2.059451188455657,
-              49.47442827289717
-            ],
-            [
-              2.063526430793952,
-              49.475194012338385
-            ],
-            [
-              2.064474881192365,
-              49.47402477443125
-            ],
-            [
-              2.064706823070646,
-              49.4737126478732
-            ],
-            [
-              2.064970373754216,
-              49.47326758865777
-            ],
-            [
-              2.065150901694701,
-              49.4727719464364
-            ],
-            [
-              2.065210862641028,
-              49.472484651092394
-            ],
-            [
-              2.06524892849795,
-              49.47219718761941
-            ],
-            [
-              2.065258495459163,
-              49.471871453060295
-            ]
-          ],
-          [
-            [
-              2.063135366015468,
-              49.471627346873994
-            ],
-            [
-              2.061830908675864,
-              49.4713176043185
-            ],
-            [
-              2.061663349238767,
-              49.47070036183567
-            ],
-            [
-              2.061706455135532,
-              49.470537791141936
-            ],
-            [
-              2.061886759810721,
-              49.470455951774284
-            ],
-            [
-              2.062904461026218,
-              49.47068024024579
-            ],
-            [
-              2.063135366015468,
-              49.471627346873994
-            ]
-          ],
-          [
-            [
-              2.064796849276193,
-              49.47247313849083
-            ],
-            [
-              2.064666518107164,
-              49.47291744286849
-            ],
-            [
-              2.064465042591558,
-              49.473360603494235
-            ],
-            [
-              2.063278478766903,
-              49.473187343041474
-            ],
-            [
-              2.063455072037882,
-              49.472708320007264
-            ],
-            [
-              2.063554213506674,
-              49.47227388216086
-            ],
-            [
-              2.064796849276193,
-              49.47247313849083
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "Ferme - Marquis AGCO",
-        "culture": "AGCO",
-        "statut": "Accessible",
-        "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
+        "date_fin": "-"
       }
     },
     {
@@ -2327,13 +2337,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Marquis agrof",
+        "name": "Marquis agrof",
         "culture": "Maïs Ensilage",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2450,13 +2461,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Parcelle 2",
+        "name": "Parcelle 2",
         "culture": "Bande enherbée",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2521,13 +2533,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Plaine",
+        "name": "Plaine",
         "culture": "Méteil",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2624,13 +2637,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Poirier bas",
+        "name": "Poirier bas",
         "culture": "Orge 2 rangs de printemps",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2735,13 +2749,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Poirier haut",
+        "name": "Poirier haut",
         "culture": "Blé tendre d'hiver",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2864,13 +2879,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Poteau nord",
+        "name": "Poteau 1",
         "culture": "Lin fibre",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2919,13 +2935,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - Poteau sud",
+        "name": "Poteau 2",
         "culture": "Maïs Ensilage",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
+        "nb_jours_interdiction": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2990,1534 +3007,14 @@
         ]
       },
       "properties": {
-        "name": "Ferme - vigne",
+        "name": "vigne",
         "culture": "Vigne - Raisin de Cuve",
         "statut": "Accessible",
         "date_application": "-",
-        "nb_jours_interdiction": "-",
+        "jours_restants": 0,
         "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.071848449674691,
-              49.46980026018054
-            ],
-            [
-              2.070658164249631,
-              49.46974837072858
-            ],
-            [
-              2.070636070521686,
-              49.46996359135025
-            ],
-            [
-              2.07182636090274,
-              49.470015481007046
-            ],
-            [
-              2.071848449674691,
-              49.46980026018054
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P01",
-        "culture": "Sorgho fourrager",
-        "statut": "Accessible",
-        "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.071848985944472,
-              49.46979577368326
-            ],
-            [
-              2.071871074527596,
-              49.469580552800636
-            ],
-            [
-              2.070680794161314,
-              49.46952866355833
-            ],
-            [
-              2.07065870062234,
-              49.46974388423617
-            ],
-            [
-              2.071848985944472,
-              49.46979577368326
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P02",
-        "culture": "Orge de printemps",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.070681227337292,
-              49.46952415229682
-            ],
-            [
-              2.071871511400513,
-              49.46957604170075
-            ],
-            [
-              2.071893599898342,
-              49.469360819756076
-            ],
-            [
-              2.070703320791071,
-              49.469308930556956
-            ],
-            [
-              2.070681227337292,
-              49.46952415229682
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P03",
-        "culture": "Blé tendre d'hiver",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.073148832611128,
-              49.469856919114164
-            ],
-            [
-              2.071958544564089,
-              49.46980504243992
-            ],
-            [
-              2.071936456250434,
-              49.470020263285505
-            ],
-            [
-              2.073126749253294,
-              49.47007214016448
-            ],
-            [
-              2.073148832611128,
-              49.469856919114164
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P04",
-        "culture": "Sorgho fourrager",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.073171451936879,
-              49.46963721150524
-            ],
-            [
-              2.071981168948958,
-              49.46958533504074
-            ],
-            [
-              2.071959080824231,
-              49.46980055594229
-            ],
-            [
-              2.073149368767933,
-              49.46985243261152
-            ],
-            [
-              2.073171451936879,
-              49.46963721150524
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P05",
-        "culture": "Orge de printemps",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.072003690050928,
-              49.46936560181124
-            ],
-            [
-              2.071981602011477,
-              49.469580823774905
-            ],
-            [
-              2.073171888696242,
-              49.469632700400986
-            ],
-            [
-              2.073193971780018,
-              49.46941747823259
-            ],
-            [
-              2.072003690050928,
-              49.46936560181124
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P06",
-        "culture": "Blé tendre d'hiver",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.070749867995965,
-              49.46885603657995
-            ],
-            [
-              2.070727775034551,
-              49.46907125742912
-            ],
-            [
-              2.071918044868182,
-              49.46912314623598
-            ],
-            [
-              2.07194013287377,
-              49.4689079251821
-            ],
-            [
-              2.070749867995965,
-              49.46885603657995
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P07",
-        "culture": "Prairie temporaire",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.070772497123769,
-              49.46863632917785
-            ],
-            [
-              2.070750404351318,
-              49.468851550083095
-            ],
-            [
-              2.071940669126306,
-              49.468903438680044
-            ],
-            [
-              2.071962756942872,
-              49.46868821757008
-            ],
-            [
-              2.070772497123769,
-              49.46863632917785
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P08",
-        "culture": "Maïs ensilage",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.071985281531718,
-              49.46846848429356
-            ],
-            [
-              2.070795022971211,
-              49.46841659594448
-            ],
-            [
-              2.070772930284259,
-              49.468631817911586
-            ],
-            [
-              2.071963193800342,
-              49.46868370646541
-            ],
-            [
-              2.071985281531718,
-              49.46846848429356
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P09",
-        "culture": "Maïs ensilage",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.073217923587284,
-              49.469184329985914
-            ],
-            [
-              2.072027651027796,
-              49.469132453952355
-            ],
-            [
-              2.072005563291758,
-              49.469347674969164
-            ],
-            [
-              2.073195840807248,
-              49.46939955120743
-            ],
-            [
-              2.073217923587284,
-              49.469184329985914
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P10",
-        "culture": "Prairie temporaire",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.07324102950174,
-              49.46896009667992
-            ],
-            [
-              2.073263111904414,
-              49.468744875346445
-            ],
-            [
-              2.072072849463812,
-              49.46869299973159
-            ],
-            [
-              2.072050762105426,
-              49.46890822086035
-            ],
-            [
-              2.07324102950174,
-              49.46896009667992
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P11",
-        "culture": "Maïs ensilage",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.072073282510682,
-              49.46868848846102
-            ],
-            [
-              2.073263548648377,
-              49.46874036423723
-            ],
-            [
-              2.073285630965681,
-              49.46852514184164
-            ],
-            [
-              2.072095369783797,
-              49.46847326627022
-            ],
-            [
-              2.072073282510682,
-              49.46868848846102
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P12",
-        "culture": "Maïs ensilage",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.071987247029536,
-              49.46845058946782
-            ],
-            [
-              2.07200933445704,
-              49.46823536824239
-            ],
-            [
-              2.070819085065099,
-              49.46818348028228
-            ],
-            [
-              2.070796992682207,
-              49.46839870130293
-            ],
-            [
-              2.071987247029536,
-              49.46845058946782
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P13",
-        "culture": "Prairie temporaire",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.070819621407556,
-              49.468178993781564
-            ],
-            [
-              2.072009870696371,
-              49.4682308817368
-            ],
-            [
-              2.072031957934952,
-              49.46801566045582
-            ],
-            [
-              2.070841713601588,
-              49.46796377270522
-            ],
-            [
-              2.070819621407556,
-              49.468178993781564
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P14",
-        "culture": "Blé tendre d'hiver",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.072032394780543,
-              49.46801114934758
-            ],
-            [
-              2.072054481933846,
-              49.467795927004325
-            ],
-            [
-              2.070864238859305,
-              49.4677440392969
-            ],
-            [
-              2.070842146750353,
-              49.46795926143525
-            ],
-            [
-              2.072032394780543,
-              49.46801114934758
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P15",
-        "culture": "Blé tendre d'hiver",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.073309678026988,
-              49.468292025546994
-            ],
-            [
-              2.072119426013515,
-              49.46824015036409
-            ],
-            [
-              2.072097339044285,
-              49.46845537160825
-            ],
-            [
-              2.07328759601359,
-              49.46850724699586
-            ],
-            [
-              2.073309678026988,
-              49.468292025546994
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P16",
-        "culture": "Prairie temporaire",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.072142049023408,
-              49.468020442557986
-            ],
-            [
-              2.072119962243195,
-              49.46823566385796
-            ],
-            [
-              2.073310214153542,
-              49.46828753903591
-            ],
-            [
-              2.073332295978275,
-              49.46807231753115
-            ],
-            [
-              2.072142049023408,
-              49.468020442557986
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P17",
-        "culture": "Blé tendre d'hiver",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.073354814449727,
-              49.46785258385166
-            ],
-            [
-              2.072164568753711,
-              49.46780070892151
-            ],
-            [
-              2.072142482058656,
-              49.46801593128378
-            ],
-            [
-              2.073332732710357,
-              49.46806780641864
-            ],
-            [
-              2.073354814449727,
-              49.46785258385166
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P18",
-        "culture": "Blé tendre d'hiver",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.070866273632367,
-              49.467726082473646
-            ],
-            [
-              2.072056512492614,
-              49.46777796999678
-            ],
-            [
-              2.072078599341854,
-              49.467562748600145
-            ],
-            [
-              2.070888365436967,
-              49.467510861281895
-            ],
-            [
-              2.070866273632367,
-              49.467726082473646
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P19",
-        "culture": "Betterave fourragère",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.072079135568446,
-              49.46755826209087
-            ],
-            [
-              2.072101222228675,
-              49.46734304063835
-            ],
-            [
-              2.070910993382023,
-              49.467291153530006
-            ],
-            [
-              2.070888901766369,
-              49.4675063747779
-            ],
-            [
-              2.072079135568446,
-              49.46755826209087
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P20",
-        "culture": "Colza",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.070911426519051,
-              49.46728664225659
-            ],
-            [
-              2.072101659062491,
-              49.467338529526266
-            ],
-            [
-              2.072123745637434,
-              49.46712330701212
-            ],
-            [
-              2.070933518049413,
-              49.467071419947246
-            ],
-            [
-              2.070911426519051,
-              49.46728664225659
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P21",
-        "culture": "Colza",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.072188689465848,
-              49.46756753066228
-            ],
-            [
-              2.072166603075076,
-              49.467782752077675
-            ],
-            [
-              2.073356844557102,
-              49.46783462682316
-            ],
-            [
-              2.073378925992378,
-              49.467619405202996
-            ],
-            [
-              2.072188689465848,
-              49.46756753066228
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P22",
-        "culture": "Betterave fourragère",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.073401543352299,
-              49.46739969701236
-            ],
-            [
-              2.072211311884661,
-              49.4673478226811
-            ],
-            [
-              2.07218922568269,
-              49.46756304415241
-            ],
-            [
-              2.073379462105783,
-              49.46761491868838
-            ],
-            [
-              2.073401543352299,
-              49.46739969701236
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - BART P23",
-        "culture": "Colza",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.073937349449682,
-              49.46723357174325
-            ],
-            [
-              2.07376290205829,
-              49.46722442121698
-            ],
-            [
-              2.073692510822497,
-              49.467794408412324
-            ],
-            [
-              2.073866960133537,
-              49.467803559034245
-            ],
-            [
-              2.073937349449682,
-              49.46723357174325
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 01",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.074089638266133,
-              49.46778521064005
-            ],
-            [
-              2.074157954695158,
-              49.467252574072845
-            ],
-            [
-              2.07398932496185,
-              49.46724338719534
-            ],
-            [
-              2.073921006799682,
-              49.467776023672876
-            ],
-            [
-              2.074089638266133,
-              49.46778521064005
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 02",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.074377992127165,
-              49.46726428060064
-            ],
-            [
-              2.074202496816285,
-              49.467254929578324
-            ],
-            [
-              2.074135562672028,
-              49.46778848811137
-            ],
-            [
-              2.07431105979029,
-              49.467797839225184
-            ],
-            [
-              2.074377992127165,
-              49.46726428060064
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 03",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.074359098145924,
-              49.46779765392851
-            ],
-            [
-              2.074534787972649,
-              49.46780728478041
-            ],
-            [
-              2.074604762900228,
-              49.46726507964524
-            ],
-            [
-              2.074429074911468,
-              49.46725544888906
-            ],
-            [
-              2.074359098145924,
-              49.46779765392851
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 04",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.073686037137993,
-              49.46781590476494
-            ],
-            [
-              2.073613039485176,
-              49.46840553580472
-            ],
-            [
-              2.07379488175899,
-              49.46841509761907
-            ],
-            [
-              2.073867877341886,
-              49.46782546647594
-            ],
-            [
-              2.073686037137993,
-              49.46781590476494
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 05",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.074013769393663,
-              49.46841315855921
-            ],
-            [
-              2.074084965903138,
-              49.467835316433856
-            ],
-            [
-              2.073900368514295,
-              49.46782565582176
-            ],
-            [
-              2.073829169945398,
-              49.46840349784478
-            ],
-            [
-              2.074013769393663,
-              49.46841315855921
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 06",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.07405261189268,
-              49.46843490456933
-            ],
-            [
-              2.074230674613566,
-              49.46844445301004
-            ],
-            [
-              2.074305333106417,
-              49.467853097971314
-            ],
-            [
-              2.074127272417822,
-              49.467843549634146
-            ],
-            [
-              2.07405261189268,
-              49.46843490456933
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 07",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.074279396225617,
-              49.46842210933181
-            ],
-            [
-              2.074444006852704,
-              49.468431188187424
-            ],
-            [
-              2.074516885568765,
-              49.46786993945321
-            ],
-            [
-              2.074352276724087,
-              49.46786086069102
-            ],
-            [
-              2.074279396225617,
-              49.46842210933181
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 08",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.07372193152133,
-              49.46902800363017
-            ],
-            [
-              2.073794237789925,
-              49.46844290721119
-            ],
-            [
-              2.073617332072583,
-              49.46843362163656
-            ],
-            [
-              2.073545023805653,
-              49.46901871795592
-            ],
-            [
-              2.07372193152133,
-              49.46902800363017
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 09",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.073932048909571,
-              49.469041604099715
-            ],
-            [
-              2.074006730677228,
-              49.4684685669076
-            ],
-            [
-              2.073833504510159,
-              49.46845897813772
-            ],
-            [
-              2.073758820827463,
-              49.469032015229025
-            ],
-            [
-              2.073932048909571,
-              49.469041604099715
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 10",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.074226171708765,
-              49.468485517917365
-            ],
-            [
-              2.074051212291695,
-              49.468475489996464
-            ],
-            [
-              2.073975130019873,
-              49.46903927851212
-            ],
-            [
-              2.074150091338929,
-              49.46904930653667
-            ],
-            [
-              2.074226171708765,
-              49.468485517917365
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 11",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.074276956391826,
-              49.46848422595335
-            ],
-            [
-              2.074200600183515,
-              49.46904982831868
-            ],
-            [
-              2.074360888843065,
-              49.46905901888613
-            ],
-            [
-              2.074437243303298,
-              49.46849341642549
-            ],
-            [
-              2.074276956391826,
-              49.46848422595335
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 12",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.073546164862385,
-              49.469062788794766
-            ],
-            [
-              2.07347422421167,
-              49.46960706153957
-            ],
-            [
-              2.073645694727666,
-              49.469616687476915
-            ],
-            [
-              2.073717633578274,
-              49.46907241463611
-            ],
-            [
-              2.073546164862385,
-              49.469062788794766
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 13",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.073692600333545,
-              49.469611868646986
-            ],
-            [
-              2.073861782327625,
-              49.46962093292674
-            ],
-            [
-              2.073930556337655,
-              49.4690757377023
-            ],
-            [
-              2.073761376123851,
-              49.46906667351314
-            ],
-            [
-              2.073692600333545,
-              49.469611868646986
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 14",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.074544525553657,
-              49.46808851738989
-            ],
-            [
-              2.074722361465903,
-              49.46809771424849
-            ],
-            [
-              2.074789404065411,
-              49.467547077272755
-            ],
-            [
-              2.074611570044003,
-              49.467537880506995
-            ],
-            [
-              2.074544525553657,
-              49.46808851738989
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 15",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.074465175700039,
-              49.468715284890386
-            ],
-            [
-              2.07463768387053,
-              49.46872465923663
-            ],
-            [
-              2.07471124221119,
-              49.46814971763497
-            ],
-            [
-              2.074538735954608,
-              49.46814034338755
-            ],
-            [
-              2.074465175700039,
-              49.468715284890386
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "PF AGRO - TA AGREN 16",
-        "culture": "A définir",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-",
-        "jours_restants": 0
+        "date_fin": "-"
       }
     }
   ]
