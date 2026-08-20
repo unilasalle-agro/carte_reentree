@@ -297,11 +297,11 @@
       "properties": {
         "name": "Dure peine",
         "culture": "Prairie permanente",
-        "statut": "Accessible",
-        "date_application": "2026-07-26",
-        "jours_restants": 11,
-        "date_acces": "2026-08-02",
-        "nb_jours_interdiction": 7,
+        "statut": "Planifié",
+        "date_application": "2026-08-24",
+        "jours_restants": 0,
+        "date_acces": "2026-08-26",
+        "nb_jours_interdiction": 3,
         "date_fin": "-"
       }
     },
