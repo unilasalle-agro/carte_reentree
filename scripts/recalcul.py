@@ -2,7 +2,7 @@
 Recalcul automatique des statuts de réentrée
 ---------------------------------------------
 Lit le GeoJSON existant sur GitHub, recalcule les statuts
-selon la date du jour, et écrase le fichier.
+et les jours restants selon la date du jour, et écrase le fichier.
 Déclenché chaque nuit par GitHub Actions.
 """
 
@@ -10,12 +10,12 @@ import json
 import base64
 import os
 import requests
-from datetime import date, timedelta, datetime
+from datetime import date, timedelta
 
 GITHUB_TOKEN    = os.environ['GITHUB_TOKEN']
 GITHUB_USERNAME = os.environ['GITHUB_USERNAME']
 GITHUB_REPO     = os.environ['GITHUB_REPO']
-GITHUB_FICHIER  = os.environ.get('GITHUB_FICHIER', 'parcelles_final_v2.geojson')
+GITHUB_FICHIER  = os.environ.get('GITHUB_FICHIER', 'parcelles_prod.geojson')
 
 HEADERS = {
     'Authorization': f'token {GITHUB_TOKEN}',
@@ -23,22 +23,21 @@ HEADERS = {
     'User-Agent': 'GitHubActions-Parcelles'
 }
 
-def calculer_statut(date_app_str, nb_jours):
-    if not date_app_str or date_app_str == '-' or not nb_jours or nb_jours == '-':
-        return 'Accessible'
+def calculer(date_app_str, nb_jours_interdiction):
+    """Retourne (statut, date_acces)"""
+    if not date_app_str or date_app_str == '-' or not nb_jours_interdiction or nb_jours_interdiction == '-':
+        return 'Accessible', '-'
     try:
         date_app = date.fromisoformat(str(date_app_str)[:10])
-        date_fin = date_app + timedelta(days=int(nb_jours))
-        return 'Accès interdit' if date.today() <= date_fin else 'Accessible'
+        date_acces = date_app + timedelta(days=int(nb_jours_interdiction))
+        if date.today() > date_acces:
+            return 'Accessible', date_acces.isoformat()
+        elif date.today() < date_app:
+            return 'Planifié', date_acces.isoformat()
+        else:
+            return 'Accès interdit', date_acces.isoformat()
     except Exception:
-        return 'Accessible'
-
-def recalculer_date_fin(date_app_str, nb_jours):
-    try:
-        date_app = date.fromisoformat(str(date_app_str)[:10])
-        return (date_app + timedelta(days=int(nb_jours))).isoformat()
-    except Exception:
-        return '-'
+        return 'Accessible', '-'
 
 def main():
     print(f"Recalcul des statuts — {date.today().isoformat()}")
@@ -59,14 +58,17 @@ def main():
     for feat in geojson['features']:
         p = feat['properties']
         ancien_statut = p.get('statut', 'Accessible')
-        nouveau_statut = calculer_statut(p.get('date_application'), p.get('nb_jours'))
-        p['statut'] = nouveau_statut
-        p['date_fin'] = recalculer_date_fin(p.get('date_application'), p.get('nb_jours'))
+        statut, date_acces = calculer(p.get('date_application'), p.get('nb_jours_interdiction'))
 
-        emoji = '🔴' if nouveau_statut == 'Accès interdit' else '🟢'
-        changed = ' ← CHANGEMENT' if ancien_statut != nouveau_statut else ''
-        print(f"  {emoji} {p.get('name', '?'):25} | {nouveau_statut}{changed}")
-        if ancien_statut != nouveau_statut:
+        p['statut']     = statut
+        p['date_acces'] = date_acces
+        if 'jours_restants' in p:
+            del p['jours_restants']
+
+        emoji = '🔴' if statut == 'Accès interdit' else ('🔵' if statut == 'Planifié' else '🟢')
+        changed = ' ← CHANGEMENT' if ancien_statut != statut else ''
+        print(f"  {emoji} {p.get('name', '?'):35} | {statut}{changed}")
+        if ancien_statut != statut:
             modifiees += 1
 
     print(f"  {modifiees} statut(s) mis à jour")
