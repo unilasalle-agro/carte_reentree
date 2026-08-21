@@ -228,9 +228,9 @@
         "name": "Ferme - Dure peine",
         "culture": "Prairie permanente",
         "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_application": "2026-08-17",
+        "nb_jours_interdiction": 3,
+        "date_acces": "2026-08-20"
       }
     },
     {
