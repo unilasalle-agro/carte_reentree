@@ -109,10 +109,10 @@
       "properties": {
         "name": "Ferme - Cavée",
         "culture": "Maïs Ensilage",
-        "statut": "Accessible",
-        "date_application": "-",
-        "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "statut": "Accès interdit",
+        "date_application": "2026-08-21",
+        "nb_jours_interdiction": 3,
+        "date_acces": "2026-08-24"
       }
     },
     {
