@@ -109,10 +109,11 @@
       "properties": {
         "name": "Ferme - Cavée",
         "culture": "Maïs Ensilage",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-08-20",
         "nb_jours_interdiction": 3,
-        "date_acces": "2026-08-23"
+        "date_acces": "2026-08-23",
+        "date_fin": "-"
       }
     },
     {
@@ -227,10 +228,11 @@
       "properties": {
         "name": "Ferme - Dure peine",
         "culture": "Prairie permanente",
-        "statut": "Planifié",
+        "statut": "Accessible",
         "date_application": "2026-08-24",
         "nb_jours_interdiction": 3,
-        "date_acces": "2026-08-27"
+        "date_acces": "2026-08-27",
+        "date_fin": "-"
       }
     },
     {
@@ -401,10 +403,11 @@
       "properties": {
         "name": "Ferme - Egazelles",
         "culture": "Blé tendre d'hiver",
-        "statut": "Planifié",
+        "statut": "Accessible",
         "date_application": "2026-08-21",
         "nb_jours_interdiction": 3,
-        "date_acces": "2026-08-24"
+        "date_acces": "2026-08-24",
+        "date_fin": "-"
       }
     },
     {
@@ -694,7 +697,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -816,7 +820,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -942,7 +947,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1140,7 +1146,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1250,7 +1257,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1361,10 +1369,11 @@
       "properties": {
         "name": "Ferme - Grande 3",
         "culture": "Betterave sucrière",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-08-20",
         "nb_jours_interdiction": 3,
-        "date_acces": "2026-08-23"
+        "date_acces": "2026-08-23",
+        "date_fin": "-"
       }
     },
     {
@@ -1698,7 +1707,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1828,7 +1838,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -1878,7 +1889,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2016,7 +2028,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2186,7 +2199,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2318,7 +2332,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2440,7 +2455,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2510,7 +2526,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2612,7 +2629,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2722,7 +2740,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2850,7 +2869,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2904,7 +2924,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -2974,7 +2995,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3012,7 +3034,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3050,7 +3073,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3088,7 +3112,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3126,7 +3151,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3164,7 +3190,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3202,7 +3229,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3240,7 +3268,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3278,7 +3307,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3316,7 +3346,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3354,7 +3385,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3392,7 +3424,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3430,7 +3463,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3468,7 +3502,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3506,7 +3541,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3544,7 +3580,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3582,7 +3619,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3620,7 +3658,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3658,7 +3697,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3696,7 +3736,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3734,7 +3775,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3772,7 +3814,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3810,7 +3853,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3848,7 +3892,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3886,7 +3931,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3924,7 +3970,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -3962,7 +4009,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4000,7 +4048,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4038,7 +4087,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4076,7 +4126,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4114,7 +4165,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4152,7 +4204,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4190,7 +4243,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4228,7 +4282,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4266,7 +4321,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4304,7 +4360,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4342,7 +4399,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4380,7 +4438,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4418,7 +4477,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     },
     {
@@ -4456,7 +4516,8 @@
         "statut": "Accessible",
         "date_application": "-",
         "nb_jours_interdiction": "-",
-        "date_acces": "-"
+        "date_acces": "-",
+        "date_fin": "-"
       }
     }
   ]
