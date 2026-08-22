@@ -401,7 +401,7 @@
       "properties": {
         "name": "Ferme - Egazelles",
         "culture": "Blé tendre d'hiver",
-        "statut": "Planifié",
+        "statut": "Accès interdit",
         "date_application": "2026-08-22",
         "nb_jours_interdiction": 3,
         "date_acces": "2026-08-25"
