@@ -2,7 +2,7 @@ name: Recalcul statuts réentrée
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # Chaque nuit à 5h UTC (6h heure française)
+    - cron: '0 1 * * *'  # Chaque nuit à 1h UTC (2h heure française)
   workflow_dispatch:       # Permet aussi de lancer manuellement
 
 jobs:
