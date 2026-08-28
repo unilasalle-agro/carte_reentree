@@ -109,7 +109,7 @@
       "properties": {
         "name": "Ferme - Cavée",
         "culture": "Maïs Ensilage",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-08-24",
         "nb_jours_interdiction": 3,
         "date_acces": "2026-08-27"
@@ -691,7 +691,7 @@
       "properties": {
         "name": "Ferme - Entre deux bois",
         "culture": "Prairie temporaire",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-08-24",
         "nb_jours_interdiction": "3",
         "date_acces": "2026-08-27"
@@ -2013,7 +2013,7 @@
       "properties": {
         "name": "Ferme - Larris",
         "culture": "Prairie temporaire",
-        "statut": "Accès interdit",
+        "statut": "Accessible",
         "date_application": "2026-08-24",
         "nb_jours_interdiction": 3,
         "date_acces": "2026-08-27"
