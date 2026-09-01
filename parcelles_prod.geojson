@@ -1361,7 +1361,7 @@
       "properties": {
         "name": "Ferme - Grande 3",
         "culture": "Betterave sucrière",
-        "statut": "Planifié",
+        "statut": "Accès interdit",
         "date_application": "2026-09-01",
         "nb_jours_interdiction": 10,
         "date_acces": "2026-09-11"
