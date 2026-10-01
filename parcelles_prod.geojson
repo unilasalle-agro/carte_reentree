@@ -401,10 +401,10 @@
       "properties": {
         "name": "Ferme - Egazelles",
         "culture": "Blé tendre d'hiver",
-        "statut": "Accessible",
-        "date_application": "2026-09-07",
+        "statut": "Accès interdit",
+        "date_application": "2026-10-01",
         "nb_jours_interdiction": 3,
-        "date_acces": "2026-09-10"
+        "date_acces": "2026-10-04"
       }
     },
     {
